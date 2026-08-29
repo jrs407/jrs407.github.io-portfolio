@@ -32,3 +32,22 @@ themeToggle.addEventListener("click", () => {
   applyTheme(next);
   localStorage.setItem("theme", next);
 });
+
+const languageToggle = document.getElementById("languageToggle");
+const FLAGS = { es: "🇬🇧", en: "🇪🇸" };
+const LANG_LABELS = { es: "Switch to English", en: "Cambiar a español" };
+const storedLang = localStorage.getItem("lang");
+
+function applyLanguage(lang) {
+  languageToggle.dataset.lang = lang;
+  languageToggle.textContent = FLAGS[lang];
+  languageToggle.setAttribute("aria-label", LANG_LABELS[lang]);
+}
+
+applyLanguage(storedLang === "en" ? "en" : "es");
+
+languageToggle.addEventListener("click", () => {
+  const next = languageToggle.dataset.lang === "es" ? "en" : "es";
+  applyLanguage(next);
+  localStorage.setItem("lang", next);
+});

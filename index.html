@@ -18,18 +18,22 @@
     <nav class="nav container">
       <a href="#" class="logo"><!-- TODO: tus iniciales o logo --></a>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">Sobre mí</a></li>
-        <li><a href="#skills">Habilidades</a></li>
         <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#experience">Experiencia laboral</a></li>
+        <li><a href="#skills">Habilidades</a></li>
         <li><a href="#contact">Contacto</a></li>
       </ul>
 
-      <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">🌙</button>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">🌙</button>
+        <button class="language-toggle" id="languageToggle" aria-label="Cambiar idioma">🇬🇧</button>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
   </header>
 
@@ -39,6 +43,21 @@
       <h1><!-- TODO: tu nombre --></h1>
       <p class="hero-role"><!-- TODO: tu rol/título --></p>
       <p class="hero-text"><!-- TODO: breve descripción sobre ti --></p>
+
+      <div class="hero-intro">
+        <div class="hero-image">
+          <img src="assets/img/placeholder.svg" alt="Imagen de presentación" />
+        </div>
+        <div class="hero-copy">
+          <h2 class="hero-intro-title">Título genérico</h2>
+          <p class="hero-intro-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod,
+            nisl eget aliquam ultricies, nunc nisl aliquet nunc, quis aliquam nisl nunc
+            quis nisl. Sed euismod, nisl eget aliquam ultricies.
+          </p>
+        </div>
+      </div>
+
       <div class="hero-actions">
         <a href="#projects" class="btn btn-primary">Ver proyectos</a>
         <a href="#contact" class="btn btn-ghost">Contactar</a>
@@ -48,11 +67,20 @@
       </div>
     </section>
 
-    <section class="section" id="about">
+    <section class="section" id="projects">
       <div class="container">
-        <h2 class="section-title">Sobre mí</h2>
-        <div class="about-content">
-          <!-- TODO: tu texto sobre ti -->
+        <h2 class="section-title">Proyectos</h2>
+        <div class="projects-grid">
+          <!-- TODO: añade tus proyectos reales, un <article class="project-card"> por cada uno -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <h2 class="section-title">Experiencia laboral</h2>
+        <div class="experience-grid">
+          <!-- TODO: añade tu experiencia laboral, un <article class="experience-card"> por cada entrada -->
         </div>
       </div>
     </section>
@@ -66,14 +94,7 @@
       </div>
     </section>
 
-    <section class="section" id="projects">
-      <div class="container">
-        <h2 class="section-title">Proyectos</h2>
-        <div class="projects-grid">
-          <!-- TODO: añade tus proyectos reales, un <article class="project-card"> por cada uno -->
-        </div>
-      </div>
-    </section>
+
 
     <section class="section section-alt" id="contact">
       <div class="container">

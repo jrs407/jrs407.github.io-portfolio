@@ -1,0 +1,13 @@
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      # Monta el proyecto dentro del contenedor: editas en local y se ve al instante
+      - ./:/app
+    environment:
+      # Los bind mounts de Windows no emiten eventos de archivo al contenedor Linux,
+      # asi que forzamos sondeo para que la recarga automatica funcione.
+      CHOKIDAR_USEPOLLING: "true"
+      CHOKIDAR_INTERVAL: "300"
