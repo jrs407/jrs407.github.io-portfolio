@@ -332,11 +332,25 @@ img {
   transform: translateX(60px);
 }
 
+/* Escalonado: título, luego carrusel, luego botón */
+.reveal-left.reveal-2 {
+  transition-delay: 0.12s;
+}
+
+.reveal-left.reveal-3 {
+  transition-delay: 0.24s;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .reveal-left {
     opacity: 1;
     transform: none;
     transition: none;
+  }
+
+  .reveal-left.reveal-2,
+  .reveal-left.reveal-3 {
+    transition-delay: 0s;
   }
 }
 
@@ -430,6 +444,212 @@ img {
 
 .project-links a {
   color: var(--accent);
+}
+
+/* Panel de proyectos a todo el ancho, con color propio para diferenciarlo */
+.projects-panel {
+  background: var(--bg-alt);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 3.5rem 1.5rem;
+  /* Contiene el desplazamiento lateral de la animación de aparición/salida
+     del carrusel para que no genere scroll horizontal en la página */
+  overflow: hidden;
+}
+
+/* Contenido del panel centrado y a casi todo el ancho de la pantalla */
+.projects-panel-inner {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+/* El título vive dentro del panel de color */
+.projects-panel-inner .section-title {
+  margin-bottom: 2.5rem;
+}
+
+/* Carrusel */
+.carousel {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.carousel-viewport {
+  overflow: hidden;
+  flex: 1;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  /* Los proyectos contiguos se desvanecen en los bordes en vez de cortarse */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 4.5rem,
+    #000 calc(100% - 4.5rem),
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0,
+    #000 4.5rem,
+    #000 calc(100% - 4.5rem),
+    transparent 100%
+  );
+}
+
+.carousel-viewport.is-dragging {
+  cursor: grabbing;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1.75rem;
+  /* Holgura vertical para que el hover pueda agrandar la imagen sin recortarse */
+  padding: 0.75rem 0;
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.carousel-track.no-transition {
+  transition: none;
+}
+
+/* Siempre 3 imágenes principales nítidas; las contiguas asoman borrosas */
+.carousel-slide {
+  flex: 0 0 calc((100% - 13rem) / 3);
+  text-align: center;
+  filter: blur(6px);
+  opacity: 0.45;
+  transition: filter 0.4s ease, opacity 0.4s ease;
+}
+
+.carousel-slide.is-active {
+  filter: none;
+  opacity: 1;
+}
+
+/* Cada imagen es un enlace al proyecto correspondiente */
+.carousel-link {
+  display: block;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  background: var(--bg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  background: var(--bg);
+  -webkit-user-drag: none;
+}
+
+/* Al pasar el cursor, la imagen entera se agranda (solo las principales) */
+.carousel-slide.is-active .carousel-link {
+  cursor: pointer;
+}
+
+.carousel-slide.is-active .carousel-link:hover,
+.carousel-slide.is-active .carousel-link:focus-visible {
+  position: relative;
+  z-index: 2;
+  transform: scale(1.06);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+}
+
+.carousel-viewport.is-dragging .carousel-link {
+  transform: none;
+}
+
+/* Título debajo de cada imagen; solo en las imágenes principales */
+.carousel-caption {
+  margin: 1.1rem 0 0;
+  font-size: 1.2rem;
+}
+
+.carousel-slide:not(.is-active) .carousel-caption {
+  visibility: hidden;
+}
+
+/* Botón central bajo los títulos */
+.carousel-cta {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+/* Flechas laterales < > */
+.carousel-arrow {
+  flex: 0 0 auto;
+  width: 2.75rem;
+  height: 2.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease, transform 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.carousel-arrow:hover:not(:disabled),
+.carousel-arrow:focus-visible {
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.carousel-arrow:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+@media (max-width: 720px) {
+  .projects-panel {
+    padding: 1.75rem 1rem;
+  }
+
+  .carousel {
+    gap: 0.5rem;
+  }
+
+  .carousel-track {
+    gap: 1rem;
+  }
+
+  .carousel-viewport {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0,
+      #000 2rem,
+      #000 calc(100% - 2rem),
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent 0,
+      #000 2rem,
+      #000 calc(100% - 2rem),
+      transparent 100%
+    );
+  }
+
+  /* 1 imagen principal en móvil, con las contiguas asomando borrosas */
+  .carousel-slide {
+    flex-basis: 82%;
+  }
+
+  .carousel-arrow {
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: 1.25rem;
+  }
 }
 
 /* Experience */

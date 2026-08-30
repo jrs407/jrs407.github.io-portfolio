@@ -70,10 +70,48 @@
     </section>
 
     <section class="section" id="projects">
-      <div class="container">
-        <h2 class="section-title reveal-left">Proyectos</h2>
-        <div class="projects-grid">
-          <!-- TODO: añade tus proyectos reales, un <article class="project-card"> por cada uno -->
+      <div class="projects-panel">
+        <div class="projects-panel-inner">
+          <h2 class="section-title reveal-left">Proyectos</h2>
+
+          <div class="carousel reveal-left reveal-2" id="projectsCarousel">
+            <button class="carousel-arrow carousel-arrow--prev" type="button" aria-label="Anterior">&#8249;</button>
+
+            <div class="carousel-viewport">
+              <ul class="carousel-track">
+                <li class="carousel-slide">
+                  <a class="carousel-link" href="#proyecto-1">
+                    <img class="carousel-img" src="assets/img/placeholder.svg" alt="Imagen del proyecto 1" draggable="false" />
+                  </a>
+                  <h3 class="carousel-caption">Proyecto 1</h3>
+                </li>
+                <li class="carousel-slide">
+                  <a class="carousel-link" href="#proyecto-2">
+                    <img class="carousel-img" src="assets/img/placeholder.svg" alt="Imagen del proyecto 2" draggable="false" />
+                  </a>
+                  <h3 class="carousel-caption">Proyecto 2</h3>
+                </li>
+                <li class="carousel-slide">
+                  <a class="carousel-link" href="#proyecto-3">
+                    <img class="carousel-img" src="assets/img/placeholder.svg" alt="Imagen del proyecto 3" draggable="false" />
+                  </a>
+                  <h3 class="carousel-caption">Proyecto 3</h3>
+                </li>
+                <li class="carousel-slide">
+                  <a class="carousel-link" href="#proyecto-4">
+                    <img class="carousel-img" src="assets/img/placeholder.svg" alt="Imagen del proyecto 4" draggable="false" />
+                  </a>
+                  <h3 class="carousel-caption">Proyecto 4</h3>
+                </li>
+              </ul>
+            </div>
+
+            <button class="carousel-arrow carousel-arrow--next" type="button" aria-label="Siguiente">&#8250;</button>
+          </div>
+
+          <div class="carousel-cta reveal-left reveal-3">
+            <a href="proyectos.html" class="btn btn-primary">Ver proyectos</a>
+          </div>
         </div>
       </div>
     </section>
