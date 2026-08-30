@@ -52,3 +52,30 @@ languageToggle.addEventListener("click", () => {
   applyLanguage(next);
   localStorage.setItem("lang", next);
 });
+
+const revealEls = document.querySelectorAll(".reveal-left");
+
+if (revealEls.length) {
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Entra en pantalla: aparece desde la izquierda
+          entry.target.classList.add("is-visible");
+          entry.target.classList.remove("is-exit");
+        } else {
+          entry.target.classList.remove("is-visible");
+          // Si ha salido por arriba, se va hacia la derecha; si aún no ha
+          // llegado (queda por debajo), vuelve a su posición inicial a la izquierda
+          entry.target.classList.toggle(
+            "is-exit",
+            entry.boundingClientRect.top < 0
+          );
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  revealEls.forEach((el) => revealObserver.observe(el));
+}
