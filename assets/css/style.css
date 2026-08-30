@@ -577,6 +577,10 @@ img {
 }
 
 /* Carrusel compacto: 6 visibles a la vez, ocupando casi todo el ancho */
+#skills {
+  border-top: 1px solid var(--border);
+}
+
 #skills .container {
   overflow: hidden;
   max-width: 1760px;
