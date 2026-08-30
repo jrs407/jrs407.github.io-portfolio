@@ -197,7 +197,6 @@ img {
   gap: 3rem;
   text-align: left;
   margin: 3rem 0;
-  /* Desborda un poco hacia la izquierda de la columna del hero (nunca hacia la derecha) */
   margin-left: calc(min(0px, calc(50% - 50vw + 5rem)) / 2);
 }
 
@@ -267,7 +266,6 @@ img {
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
-  /* Alineado con la columna de texto de .hero-copy (mitad derecha del hero) */
   width: 50%;
   margin: -10rem 0 1.5rem auto;
 }
@@ -310,12 +308,10 @@ img {
   padding: 5rem 0;
 }
 
-/* Deja "Proyectos" justo fuera del primer pantallazo (ajusta el valor si hace falta) */
 #projects {
   padding-top: 11rem;
 }
 
-/* Reveal al hacer scroll: entra desde la izquierda y, al salir por arriba, se va hacia la derecha */
 .reveal-left {
   opacity: 0;
   transform: translateX(-60px);
@@ -332,7 +328,6 @@ img {
   transform: translateX(60px);
 }
 
-/* Escalonado: título, luego carrusel, luego botón */
 .reveal-left.reveal-2 {
   transition-delay: 0.12s;
 }
@@ -367,22 +362,6 @@ img {
 .about-content p {
   color: var(--text-muted);
   max-width: 680px;
-}
-
-/* Skills */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 1rem;
-}
-
-.skill-card {
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1.25rem 1rem;
-  text-align: center;
-  font-weight: 600;
 }
 
 /* Projects */
@@ -446,24 +425,19 @@ img {
   color: var(--accent);
 }
 
-/* Panel de proyectos a todo el ancho, con color propio para diferenciarlo */
 .projects-panel {
   background: var(--bg-alt);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   padding: 3.5rem 1.5rem;
-  /* Contiene el desplazamiento lateral de la animación de aparición/salida
-     del carrusel para que no genere scroll horizontal en la página */
   overflow: hidden;
 }
 
-/* Contenido del panel centrado y a casi todo el ancho de la pantalla */
 .projects-panel-inner {
   max-width: 2000px;
   margin: 0 auto;
 }
 
-/* El título vive dentro del panel de color */
 .projects-panel-inner .section-title {
   margin-bottom: 2.5rem;
 }
@@ -481,7 +455,6 @@ img {
   cursor: grab;
   user-select: none;
   -webkit-user-select: none;
-  /* Los proyectos contiguos se desvanecen en los bordes en vez de cortarse */
   -webkit-mask-image: linear-gradient(
     to right,
     transparent 0,
@@ -505,7 +478,6 @@ img {
 .carousel-track {
   display: flex;
   gap: 1.75rem;
-  /* Holgura vertical para que el hover pueda agrandar la imagen sin recortarse */
   padding: 0.75rem 0;
   transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -514,7 +486,6 @@ img {
   transition: none;
 }
 
-/* Siempre 3 imágenes principales nítidas; las contiguas asoman borrosas */
 .carousel-slide {
   flex: 0 0 calc((100% - 13rem) / 3);
   text-align: center;
@@ -528,7 +499,6 @@ img {
   opacity: 1;
 }
 
-/* Cada imagen es un enlace al proyecto correspondiente */
 .carousel-link {
   display: block;
   border-radius: var(--radius);
@@ -546,7 +516,6 @@ img {
   -webkit-user-drag: none;
 }
 
-/* Al pasar el cursor, la imagen entera se agranda (solo las principales) */
 .carousel-slide.is-active .carousel-link {
   cursor: pointer;
 }
@@ -563,7 +532,6 @@ img {
   transform: none;
 }
 
-/* Título debajo de cada imagen; solo en las imágenes principales */
 .carousel-caption {
   margin: 1.1rem 0 0;
   font-size: 1.2rem;
@@ -573,13 +541,11 @@ img {
   visibility: hidden;
 }
 
-/* Botón central bajo los títulos */
 .carousel-cta {
   margin-top: 2.5rem;
   text-align: center;
 }
 
-/* Flechas laterales < > */
 .carousel-arrow {
   flex: 0 0 auto;
   width: 2.75rem;
@@ -610,9 +576,53 @@ img {
   cursor: default;
 }
 
+/* Carrusel compacto: 6 visibles a la vez, ocupando casi todo el ancho */
+#skills .container {
+  overflow: hidden;
+  max-width: 1760px;
+}
+
+.carousel--compact {
+  gap: 2.25rem;
+}
+
+.carousel--compact .carousel-viewport {
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+.carousel--compact .carousel-track {
+  gap: 1.25rem;
+}
+
+.carousel--compact .carousel-slide {
+  flex: 0 0 calc((100% - 18rem) / 6);
+}
+
+.carousel--compact .carousel-img {
+  aspect-ratio: 1 / 1;
+}
+
+.carousel--compact .carousel-slide.is-active .carousel-link {
+  cursor: grab;
+}
+
+.carousel--compact .carousel-viewport.is-dragging .carousel-link {
+  cursor: grabbing;
+}
+
+.carousel--compact .carousel-caption {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
 @media (max-width: 720px) {
   .projects-panel {
     padding: 1.75rem 1rem;
+  }
+
+  .carousel--compact .carousel-slide {
+    flex-basis: 46%;
   }
 
   .carousel {
@@ -640,7 +650,6 @@ img {
     );
   }
 
-  /* 1 imagen principal en móvil, con las contiguas asomando borrosas */
   .carousel-slide {
     flex-basis: 82%;
   }
@@ -649,6 +658,31 @@ img {
     width: 2.25rem;
     height: 2.25rem;
     font-size: 1.25rem;
+  }
+}
+
+#experience {
+  padding: 0;
+}
+
+.experience-panel {
+  background: var(--bg);
+  padding: 0 1.5rem 3.5rem;
+  overflow: hidden;
+}
+
+.experience-panel-inner {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+.experience-panel-inner .section-title {
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 720px) {
+  .experience-panel {
+    padding: 0 1rem 1.75rem;
   }
 }
 
@@ -713,18 +747,6 @@ img {
   color: var(--accent);
 }
 
-/* Contact */
-#contact {
-  text-align: center;
-}
-
-.contact-text {
-  color: var(--text-muted);
-  max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--border);
@@ -732,6 +754,18 @@ img {
   text-align: center;
   color: var(--text-muted);
   font-size: 0.9rem;
+}
+
+.footer-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.footer-contact a {
+  color: var(--accent);
 }
 
 /* Responsive nav */

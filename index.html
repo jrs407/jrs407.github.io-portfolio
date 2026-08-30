@@ -117,37 +117,130 @@
     </section>
 
     <section class="section" id="experience">
-      <div class="container">
-        <h2 class="section-title reveal-left">Experiencia laboral</h2>
-        <div class="experience-grid">
-          <!-- TODO: añade tu experiencia laboral, un <article class="experience-card"> por cada entrada -->
+      <div class="experience-panel">
+        <div class="experience-panel-inner">
+          <h2 class="section-title reveal-left">Experiencia laboral</h2>
+
+          <div class="carousel reveal-left reveal-2" id="experienceCarousel">
+            <button class="carousel-arrow carousel-arrow--prev" type="button" aria-label="Anterior">&#8249;</button>
+
+            <div class="carousel-viewport">
+              <ul class="carousel-track">
+                <li class="carousel-slide">
+                  <a class="carousel-link" href="#experiencia-1">
+                    <img class="carousel-img" src="assets/img/placeholder.svg" alt="Imagen de la experiencia 1" draggable="false" />
+                  </a>
+                  <h3 class="carousel-caption">Experiencia 1</h3>
+                </li>
+                <li class="carousel-slide">
+                  <a class="carousel-link" href="#experiencia-2">
+                    <img class="carousel-img" src="assets/img/placeholder.svg" alt="Imagen de la experiencia 2" draggable="false" />
+                  </a>
+                  <h3 class="carousel-caption">Experiencia 2</h3>
+                </li>
+                <li class="carousel-slide">
+                  <a class="carousel-link" href="#experiencia-3">
+                    <img class="carousel-img" src="assets/img/placeholder.svg" alt="Imagen de la experiencia 3" draggable="false" />
+                  </a>
+                  <h3 class="carousel-caption">Experiencia 3</h3>
+                </li>
+                <li class="carousel-slide">
+                  <a class="carousel-link" href="#experiencia-4">
+                    <img class="carousel-img" src="assets/img/placeholder.svg" alt="Imagen de la experiencia 4" draggable="false" />
+                  </a>
+                  <h3 class="carousel-caption">Experiencia 4</h3>
+                </li>
+              </ul>
+            </div>
+
+            <button class="carousel-arrow carousel-arrow--next" type="button" aria-label="Siguiente">&#8250;</button>
+          </div>
+
+          <div class="carousel-cta reveal-left reveal-3">
+            <a href="experiencia.html" class="btn btn-primary">Ver experiencia</a>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section section-alt" id="skills">
       <div class="container">
-        <h2 class="section-title reveal-left">Habilidades</h2>
-        <ul class="skills-grid">
-          <!-- TODO: añade tus habilidades, una <li class="skill-card"> por cada una -->
-        </ul>
-      </div>
-    </section>
+        <h2 class="section-title reveal-left">Habilidades Técnicas</h2>
 
+        <div class="carousel carousel--compact reveal-left reveal-2" id="skillsCarousel" data-per-view="6" data-per-view-mobile="2">
+          <button class="carousel-arrow carousel-arrow--prev" type="button" aria-label="Anterior">&#8249;</button>
 
+          <div class="carousel-viewport">
+            <ul class="carousel-track">
+              <li class="carousel-slide">
+                <div class="carousel-link">
+                  <img class="carousel-img" src="assets/img/placeholder.svg" alt="Imagen de la habilidad 1" draggable="false" />
+                </div>
+                <h3 class="carousel-caption">Habilidad 1</h3>
+              </li>
+              <li class="carousel-slide">
+                <div class="carousel-link">
+                  <img class="carousel-img" src="assets/img/placeholder.svg" alt="Imagen de la habilidad 2" draggable="false" />
+                </div>
+                <h3 class="carousel-caption">Habilidad 2</h3>
+              </li>
+              <li class="carousel-slide">
+                <div class="carousel-link">
+                  <img class="carousel-img" src="assets/img/placeholder.svg" alt="Imagen de la habilidad 3" draggable="false" />
+                </div>
+                <h3 class="carousel-caption">Habilidad 3</h3>
+              </li>
+              <li class="carousel-slide">
+                <div class="carousel-link">
+                  <img class="carousel-img" src="assets/img/placeholder.svg" alt="Imagen de la habilidad 4" draggable="false" />
+                </div>
+                <h3 class="carousel-caption">Habilidad 4</h3>
+              </li>
+              <li class="carousel-slide">
+                <div class="carousel-link">
+                  <img class="carousel-img" src="assets/img/placeholder.svg" alt="Imagen de la habilidad 5" draggable="false" />
+                </div>
+                <h3 class="carousel-caption">Habilidad 5</h3>
+              </li>
+              <li class="carousel-slide">
+                <div class="carousel-link">
+                  <img class="carousel-img" src="assets/img/placeholder.svg" alt="Imagen de la habilidad 6" draggable="false" />
+                </div>
+                <h3 class="carousel-caption">Habilidad 6</h3>
+              </li>
+              <li class="carousel-slide">
+                <div class="carousel-link">
+                  <img class="carousel-img" src="assets/img/placeholder.svg" alt="Imagen de la habilidad 7" draggable="false" />
+                </div>
+                <h3 class="carousel-caption">Habilidad 7</h3>
+              </li>
+              <li class="carousel-slide">
+                <div class="carousel-link">
+                  <img class="carousel-img" src="assets/img/placeholder.svg" alt="Imagen de la habilidad 8" draggable="false" />
+                </div>
+                <h3 class="carousel-caption">Habilidad 8</h3>
+              </li>
+            </ul>
+          </div>
 
-    <section class="section section-alt" id="contact">
-      <div class="container">
-        <h2 class="section-title reveal-left">Contacto</h2>
-        <p class="contact-text"><!-- TODO: texto de invitación a contactar --></p>
-        <!-- TODO: enlace de contacto (ej. mailto:) -->
+          <button class="carousel-arrow carousel-arrow--next" type="button" aria-label="Siguiente">&#8250;</button>
+        </div>
+
+        <div class="carousel-cta reveal-left reveal-3">
+          <a href="habilidades.html" class="btn btn-primary">Ver habilidades</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; <span id="year"></span> <!-- TODO: tu nombre --></p>
+      <ul class="footer-contact">
+        <li>Email: <a href="mailto:josecarlosruizsan@gmail.com">josecarlosruizsan@gmail.com</a></li>
+        <li>Teléfono: <a href="tel:+34608257574">+34 608257574</a></li>
+        <li>GitHub: <a href="https://github.com/jrs407">github.com/jrs407</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/jose-carlos-ruiz-sanchez/">linkedin.com/in/jose-carlos-ruiz-sanchez</a></li>
+      </ul>
     </div>
   </footer>
 

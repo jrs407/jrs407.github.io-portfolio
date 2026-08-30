@@ -60,13 +60,10 @@ if (revealEls.length) {
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          // Entra en pantalla: aparece desde la izquierda
           entry.target.classList.add("is-visible");
           entry.target.classList.remove("is-exit");
         } else {
           entry.target.classList.remove("is-visible");
-          // Si ha salido por arriba, se va hacia la derecha; si aún no ha
-          // llegado (queda por debajo), vuelve a su posición inicial a la izquierda
           entry.target.classList.toggle(
             "is-exit",
             entry.boundingClientRect.top < 0
@@ -80,27 +77,24 @@ if (revealEls.length) {
   revealEls.forEach((el) => revealObserver.observe(el));
 }
 
-// Carrusel de proyectos: imágenes principales nítidas, contiguas borrosas,
-// navegable con < >, arrastrable con el ratón.
-const carousel = document.getElementById("projectsCarousel");
-
-if (carousel) {
+function initCarousel(carousel) {
   const track = carousel.querySelector(".carousel-track");
   const viewport = carousel.querySelector(".carousel-viewport");
   const slides = Array.from(carousel.querySelectorAll(".carousel-slide"));
   const prevBtn = carousel.querySelector(".carousel-arrow--prev");
   const nextBtn = carousel.querySelector(".carousel-arrow--next");
 
-  let index = 0; // índice del primer slide "principal"
-  let offset = 0; // translateX aplicado ahora mismo
+  let index = 0;
+  let offset = 0;
 
-  // 3 imágenes principales en escritorio, 1 en móvil (igual que el CSS)
   const mobileQuery = window.matchMedia("(max-width: 720px)");
-  const perView = () => Math.min(slides.length, mobileQuery.matches ? 1 : 3);
+  const perViewDesktop = Number(carousel.dataset.perView) || 3;
+  const perViewMobile = Number(carousel.dataset.perViewMobile) || 1;
+  const perView = () =>
+    Math.min(slides.length, mobileQuery.matches ? perViewMobile : perViewDesktop);
 
   const maxIndex = () => Math.max(0, slides.length - perView());
 
-  // translateX ideal para que el grupo que empieza en `i` quede centrado
   function targetFor(i) {
     const pv = perView();
     const first = slides[i];
@@ -110,8 +104,6 @@ if (carousel) {
     return -(first.offsetLeft - slides[0].offsetLeft - sideSpace);
   }
 
-  // Las 3 (o `perView`) principales van nítidas; el resto, borrosas.
-  // Solo se recalcula al asentar el carrusel, nunca durante el arrastre.
   function markActive() {
     const pv = perView();
     slides.forEach((slide, i) => {
@@ -152,8 +144,6 @@ if (carousel) {
     settle();
   });
 
-  // Arrastre con ratón / táctil.
-  // No se usa setPointerCapture para que el click sobre un enlace navegue con normalidad.
   let pointerActive = false;
   let dragging = false;
   let startX = 0;
@@ -174,7 +164,7 @@ if (carousel) {
     const dx = e.clientX - startX;
 
     if (!dragging) {
-      if (Math.abs(dx) <= 4) return; // aún es un click, no un arrastre
+      if (Math.abs(dx) <= 4) return;
       dragging = true;
       moved = true;
       viewport.classList.add("is-dragging");
@@ -184,12 +174,10 @@ if (carousel) {
     const hi = targetFor(0);
     const lo = targetFor(maxIndex());
     let next = startOffset + dx;
-    // resistencia suave al pasarse de los extremos
     if (next > hi) next = hi + (next - hi) * 0.3;
     if (next < lo) next = lo + (next - lo) * 0.3;
     offset = next;
     track.style.transform = `translateX(${offset}px)`;
-    // No se tocan las clases .is-active: siempre quedan 3 nítidas
   });
 
   window.addEventListener("pointerup", () => {
@@ -202,7 +190,6 @@ if (carousel) {
     settle();
   });
 
-  // Evita que un arrastre dispare el click de los enlaces/imágenes
   viewport.addEventListener(
     "click",
     (e) => {
@@ -227,3 +214,5 @@ if (carousel) {
 
   settle(false);
 }
+
+document.querySelectorAll(".carousel").forEach(initCarousel);
