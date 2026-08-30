@@ -9,6 +9,7 @@ index.html          Sobre mí (portada)
 proyectos.html      Proyectos
 experiencia.html    Experiencia laboral
 habilidades.html    Habilidades
+formacion.html      Formación Académica
 contacto.html       Contacto
 assets/
   css/
@@ -16,13 +17,16 @@ assets/
     proyectos.css     Estilos propios de proyectos.html
     experiencia.css   Estilos propios de experiencia.html
     habilidades.css   Estilos propios de habilidades.html
+    formacion.css     Estilos propios de formacion.html
     contacto.css      Estilos propios de contacto.html
   js/
     script.js         Lógica global (header: menú, tema, idioma)
     proyectos.js      Lógica propia de proyectos.html
     experiencia.js    Lógica propia de experiencia.html
     habilidades.js    Lógica propia de habilidades.html
+    formacion.js      Lógica propia de formacion.html
     contacto.js       Lógica propia de contacto.html
+  cv/                 PDF del currículum (enlazado desde el botón de la portada)
   img/
 ```
 
