@@ -95,20 +95,17 @@
             <div class="skill-icons">
               <img src="assets/img/Habilidades/Portada/javascript.png" alt="" draggable="false" />
               <img src="assets/img/Habilidades/Portada/typescript.webp" alt="" draggable="false" />
-              <img src="assets/img/Habilidades/Portada/Java.png" alt="" draggable="false" />
               <img src="assets/img/Habilidades/Portada/python.webp" alt="" draggable="false" />
             </div>
             <p data-i18n="hab.card.lang.p">
               JavaScript y TypeScript son mi base tanto en backend como en
               frontend; uso el tipado estático de TypeScript para modelar el
-              dominio y detectar errores antes de ejecutar. Java lo empleo para
-              programación orientada a objetos y servicios con Spring, Python para
+              dominio y detectar errores antes de ejecutar. Python lo utilizo para
               modelos de datos e IA, y R para análisis estadístico.
             </p>
             <ul class="skill-tags">
               <li>JavaScript</li>
               <li>TypeScript</li>
-              <li>Java</li>
               <li>Python</li>
               <li>R</li>
             </ul>
@@ -127,24 +124,18 @@
               <img src="assets/img/Habilidades/Portada/Expressjs.png" alt="" draggable="false" />
               <img src="assets/img/Habilidades/Portada/react.webp" alt="" draggable="false" />
               <img src="assets/img/Habilidades/Portada/nextjs.png" alt="" draggable="false" />
-              <img src="assets/img/Habilidades/Portada/Angular.png" alt="" draggable="false" />
-              <img src="assets/img/Habilidades/Portada/spring.svg" alt="" draggable="false" />
               <img src="assets/img/Habilidades/Portada/spark.png" alt="" draggable="false" />
             </div>
             <p data-i18n="hab.card.fw.p">
               Construyo APIs REST con Node.js y Express.js, e interfaces con React
-              y Next.js (renderizado en servidor y rutas dinámicas). Angular lo
-              utilizo como alternativa de frontend basada en componentes y
-              TypeScript, Spring para servicios en Java y Spark para procesamiento
-              distribuido sobre varios nodos.
+              y Next.js (renderizado en servidor y rutas dinámicas). Spark lo
+              utilizo para procesamiento distribuido sobre varios nodos.
             </p>
             <ul class="skill-tags">
               <li>Node.js</li>
               <li>Express.js</li>
               <li>React</li>
               <li>Next.js</li>
-              <li>Angular</li>
-              <li>Spring</li>
               <li>Spark</li>
             </ul>
             <p class="skill-applied" data-i18n-html="hab.card.fw.applied">
@@ -161,21 +152,16 @@
             <div class="skill-icons">
               <img src="assets/img/Habilidades/Portada/postgres.svg" alt="" draggable="false" />
               <img src="assets/img/Habilidades/Portada/mysql.png" alt="" draggable="false" />
-              <img src="assets/img/Habilidades/Portada/mongodb.png" alt="" draggable="false" />
             </div>
             <p data-i18n="hab.card.db.p">
               En SQL modelo esquemas relacionales, escribo consultas y cuido los
               índices (MySQL y PostgreSQL). Con la extensión PostGIS trabajo
-              consultas espaciales sobre datos geográficos. En NoSQL manejo
-              MongoDB (documental) y Cassandra (columnas anchas) para escenarios
-              de alto volumen y escritura intensiva.
+              consultas espaciales sobre datos geográficos.
             </p>
             <ul class="skill-tags">
               <li>PostgreSQL</li>
               <li>PostGIS</li>
               <li>MySQL</li>
-              <li>MongoDB</li>
-              <li>Cassandra</li>
             </ul>
             <p class="skill-applied" data-i18n-html="hab.card.db.applied">
               <span>Dónde lo he aplicado</span>
@@ -212,22 +198,27 @@
             <h3 data-i18n="hab.card.devops.h3">DevOps y despliegue</h3>
             <div class="skill-icons">
               <img src="assets/img/Habilidades/Portada/docker.png" alt="" draggable="false" />
+              <img src="assets/img/Habilidades/Portada/nginx.png" alt="" draggable="false" />
             </div>
             <p data-i18n="hab.card.devops.p">
               Contenerizo aplicaciones con Docker e imágenes reproducibles,
               orquesto varios servicios en local con docker-compose y preparo
               entornos idénticos en desarrollo y despliegue para eliminar el
-              «en mi máquina funciona».
+              «en mi máquina funciona». Sirvo las aplicaciones detrás de Nginx
+              como servidor web y proxy inverso.
             </p>
             <ul class="skill-tags">
               <li>Docker</li>
               <li>docker-compose</li>
+              <li>Nginx</li>
               <li data-i18n="hab.tag.reproducibleEnvs">Entornos reproducibles</li>
             </ul>
             <p class="skill-applied" data-i18n-html="hab.card.devops.applied">
               <span>Dónde lo he aplicado</span>
-              Despliegue en Docker de la aplicación desarrollada en las prácticas;
-              este mismo portfolio incluye Dockerfile y docker-compose.
+              Despliegue en Docker de la aplicación desarrollada en las prácticas
+              y publicación con Nginx de la página de las prácticas de empresa
+              extracurriculares; este mismo portfolio incluye Dockerfile y
+              docker-compose.
             </p>
           </article>
 
@@ -255,22 +246,63 @@
           </article>
 
           <article class="skill-card reveal-left">
-            <h3 data-i18n="hab.card.test.h3">Testing y CI/CD</h3>
+            <h3 data-i18n="hab.card.test.h3">Testing</h3>
+            <div class="skill-icons">
+              <img src="assets/img/Habilidades/Portada/jest.svg" alt="" draggable="false" />
+              <img src="assets/img/Habilidades/Portada/testing-library.svg" alt="" draggable="false" />
+            </div>
             <p data-i18n="hab.card.test.p">
-              Diseño tests unitarios para aislar y verificar la lógica, e integro
-              procesos de integración y despliegue continuos que validan cada
-              cambio de forma automática antes de que llegue a producción. El
-              objetivo es que un fallo se detecte en minutos, no en cliente.
+              Escribo tests automáticos en JavaScript con Jest, tanto para APIs de
+              Node.js (casos unitarios y pruebas de integración sobre los
+              endpoints) como para interfaces de React con React Testing Library
+              (render de componentes e interacción del usuario). El objetivo es
+              que un fallo se detecte en cuanto se introduce y no en cliente.
             </p>
             <ul class="skill-tags">
+              <li>Jest</li>
+              <li>React Testing Library</li>
               <li data-i18n="hab.tag.unitTests">Tests unitarios</li>
-              <li data-i18n="hab.tag.ci">Integración continua</li>
-              <li data-i18n="hab.tag.cd">Despliegue continuo</li>
+              <li data-i18n="hab.tag.integrationTests">Tests de integración</li>
             </ul>
             <p class="skill-applied" data-i18n-html="hab.card.test.applied">
               <span>Dónde lo he aplicado</span>
-              Pruebas de la API de las prácticas y asignaturas de la mención de
-              Ingeniería del Software centradas en calidad y verificación.
+              Pruebas de la API en Node.js y de la interfaz en React durante las
+              prácticas (entorno profesional), y tests de la lógica de Tokimori
+              como proyecto personal.
+            </p>
+          </article>
+
+          <article class="skill-card reveal-left reveal-2">
+            <h3 data-i18n="hab.card.testgrado.h3">Pruebas de software durante el Grado</h3>
+            <div class="skill-icons">
+              <img src="assets/img/Habilidades/Portada/Java.png" alt="" draggable="false" />
+              <img src="assets/img/Habilidades/Portada/junit.png" alt="" draggable="false" />
+              <img src="assets/img/Habilidades/Portada/spring.svg" alt="" draggable="false" />
+              <img src="assets/img/Habilidades/Portada/Angular.png" alt="" draggable="false" />
+              <img src="assets/img/Habilidades/Portada/mongodb.png" alt="" draggable="false" />
+              <img src="assets/img/Habilidades/Portada/cassandra.svg" alt="" draggable="false" />
+            </div>
+            <p data-i18n="hab.card.testgrado.p">
+              En el Grado en Ingeniería Informática practiqué la verificación de
+              software sobre varias tecnologías: tests unitarios con JUnit sobre
+              código Java, pruebas de servicios en Spring, pruebas de componentes
+              en Angular y validación de operaciones sobre bases de datos MongoDB
+              y Cassandra. Aquí aprendí a decidir qué hay que probar y a usar la
+              cobertura de código como criterio de calidad.
+            </p>
+            <ul class="skill-tags">
+              <li>Java</li>
+              <li>JUnit</li>
+              <li>Spring</li>
+              <li>Angular</li>
+              <li>MongoDB</li>
+              <li>Cassandra</li>
+              <li data-i18n="hab.tag.unitTests">Tests unitarios</li>
+            </ul>
+            <p class="skill-applied" data-i18n-html="hab.card.testgrado.applied">
+              <span>Dónde lo he aplicado</span>
+              Solo en asignaturas del Grado en Ingeniería Informática (Universidad
+              de Almería); todavía no lo he trasladado a un entorno profesional.
             </p>
           </article>
         </div>
