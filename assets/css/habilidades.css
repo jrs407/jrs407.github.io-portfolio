@@ -1,1 +1,227 @@
 /* Estilos de la página "Habilidades" */
+
+#tecnicas,
+#academicas,
+#transversales,
+#idiomas {
+  overflow: hidden;
+}
+
+/* Cabecera de la página */
+.skills-hero {
+  padding: 3rem 0 1rem;
+  text-align: center;
+}
+
+.skills-hero h1 {
+  font-size: clamp(1.9rem, 4vw, 2.75rem);
+  margin-bottom: 1rem;
+}
+
+.skills-eyebrow {
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.skills-lead {
+  color: var(--text-muted);
+  max-width: 70ch;
+  font-size: 1.05rem;
+  margin: 0 auto;
+}
+
+/* Índice de secciones */
+.skills-toc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+}
+
+.skills-toc a {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.4rem 0.95rem;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.skills-toc a:hover,
+.skills-toc a:focus-visible {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* Descripción introductoria de cada sección */
+.skills-section-desc {
+  color: var(--text-muted);
+  max-width: 70ch;
+  margin: -1rem auto 2.5rem;
+  text-align: center;
+}
+
+/* Rejilla de tarjetas de habilidades técnicas */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.75rem;
+}
+
+.skill-card > p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.skill-icons img {
+  height: 32px;
+  width: 32px;
+  object-fit: contain;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.skill-tags li {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+}
+
+.skill-applied {
+  margin: auto 0 0;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.skill-applied span {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+/* Listas para habilidades académicas y transversales */
+.skill-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.skill-list li {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  padding: 1.25rem 1.5rem;
+}
+
+.skill-list h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.35rem;
+}
+
+.skill-list p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* Idiomas */
+.lang-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.lang-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  padding: 1.5rem;
+}
+
+.lang-name {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.lang-level {
+  color: var(--accent);
+  font-weight: 600;
+  margin: 0.25rem 0 0.6rem;
+}
+
+.lang-card p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Nota dirigida a quien evalúa el perfil */
+.skills-note {
+  max-width: 70ch;
+  margin: 2.5rem auto 0;
+  padding: 1.25rem 1.5rem;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: color-mix(in srgb, var(--accent) 8%, var(--bg));
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.skills-note strong {
+  color: var(--text);
+}
+
+.skills-note a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+@media (max-width: 720px) {
+  .skill-card {
+    padding: 1.5rem;
+  }
+}

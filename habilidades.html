@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Habilidades</title>
-  <meta name="description" content="Habilidades." />
+  <title>Habilidades · José Carlos Ruiz Sánchez</title>
+  <meta name="description" content="Habilidades de José Carlos Ruiz Sánchez organizadas como en su CV: técnicas (lenguajes, frameworks, bases de datos, DevOps, testing), académicas, transversales e idiomas, con el contexto real de uso de cada una." />
   <link rel="icon" href="data:," />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,7 +40,395 @@
   </header>
 
   <main id="main">
-    <!-- TODO: contenido de "Habilidades" -->
+    <section class="skills-hero">
+      <div class="container">
+        <p class="skills-eyebrow">Habilidades</p>
+        <h1>Habilidades</h1>
+        <p class="skills-lead">
+          Esta página desglosa mis competencias en cuatro planos (técnico,
+          académico, transversal e idiomático), siguiendo la misma división que
+          mi currículum. En cada apartado explico qué incluye y, siempre que es
+          posible, enlazo la tecnología o la competencia con el proyecto real en
+          el que la he utilizado, de modo que cualquier afirmación pueda
+          contrastarse con un resultado concreto.
+        </p>
+        <ul class="skills-toc">
+          <li><a href="#tecnicas">Habilidades técnicas</a></li>
+          <li><a href="#academicas">Habilidades académicas</a></li>
+          <li><a href="#transversales">Habilidades transversales</a></li>
+          <li><a href="#idiomas">Idiomas</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="tecnicas">
+      <div class="container">
+        <h2 class="section-title reveal-left">Habilidades técnicas</h2>
+        <p class="skills-section-desc reveal-left reveal-2">
+          Herramientas y lenguajes con los que trabajo de forma habitual.
+          Mantengo la agrupación de mi CV (lenguajes, frameworks, bases de datos,
+          automatización, DevOps, control de versiones y testing) y añado en cada
+          tarjeta el contexto en el que los he aplicado. Para quien evalúa el
+          perfil: cada bloque describe mi nivel real de autonomía, no una simple
+          lista de palabras clave.
+        </p>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal-left">
+            <h3>Lenguajes de programación</h3>
+            <div class="skill-icons">
+              <img src="assets/img/Habilidades/Portada/javascript.png" alt="" draggable="false" />
+              <img src="assets/img/Habilidades/Portada/typescript.webp" alt="" draggable="false" />
+              <img src="assets/img/Habilidades/Portada/Java.png" alt="" draggable="false" />
+              <img src="assets/img/Habilidades/Portada/python.webp" alt="" draggable="false" />
+            </div>
+            <p>
+              JavaScript y TypeScript son mi base tanto en backend como en
+              frontend; uso el tipado estático de TypeScript para modelar el
+              dominio y detectar errores antes de ejecutar. Java lo empleo para
+              programación orientada a objetos y servicios con Spring, Python para
+              modelos de datos e IA, y R para análisis estadístico.
+            </p>
+            <ul class="skill-tags">
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>Java</li>
+              <li>Python</li>
+              <li>R</li>
+            </ul>
+            <p class="skill-applied">
+              <span>Dónde lo he aplicado</span>
+              API de las prácticas en JavaScript/TypeScript, modelo predictivo de
+              burnout en Python y microservicios de Auscultify combinando Python y
+              JavaScript.
+            </p>
+          </article>
+
+          <article class="skill-card reveal-left reveal-2">
+            <h3>Frameworks y tecnologías</h3>
+            <div class="skill-icons">
+              <img src="assets/img/Habilidades/Portada/nodejs.webp" alt="" draggable="false" />
+              <img src="assets/img/Habilidades/Portada/Expressjs.png" alt="" draggable="false" />
+              <img src="assets/img/Habilidades/Portada/react.webp" alt="" draggable="false" />
+              <img src="assets/img/Habilidades/Portada/nextjs.png" alt="" draggable="false" />
+              <img src="assets/img/Habilidades/Portada/Angular.png" alt="" draggable="false" />
+              <img src="assets/img/Habilidades/Portada/spring.svg" alt="" draggable="false" />
+              <img src="assets/img/Habilidades/Portada/spark.png" alt="" draggable="false" />
+            </div>
+            <p>
+              Construyo APIs REST con Node.js y Express.js, e interfaces con React
+              y Next.js (renderizado en servidor y rutas dinámicas). Angular lo
+              utilizo como alternativa de frontend basada en componentes y
+              TypeScript, Spring para servicios en Java y Spark para procesamiento
+              distribuido sobre varios nodos.
+            </p>
+            <ul class="skill-tags">
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Angular</li>
+              <li>Spring</li>
+              <li>Spark</li>
+            </ul>
+            <p class="skill-applied">
+              <span>Dónde lo he aplicado</span>
+              Frontend del mapa interactivo del campus en Next.js y React, API en
+              Node.js + Express.js durante las prácticas, y despliegue de un
+              modelo sobre un clúster de nodos con Spark en el Predictor de
+              burnout.
+            </p>
+          </article>
+
+          <article class="skill-card reveal-left reveal-3">
+            <h3>Bases de datos</h3>
+            <div class="skill-icons">
+              <img src="assets/img/Habilidades/Portada/postgres.svg" alt="" draggable="false" />
+              <img src="assets/img/Habilidades/Portada/mysql.png" alt="" draggable="false" />
+              <img src="assets/img/Habilidades/Portada/mongodb.png" alt="" draggable="false" />
+            </div>
+            <p>
+              En SQL modelo esquemas relacionales, escribo consultas y cuido los
+              índices (MySQL y PostgreSQL). Con la extensión PostGIS trabajo
+              consultas espaciales sobre datos geográficos. En NoSQL manejo
+              MongoDB (documental) y Cassandra (columnas anchas) para escenarios
+              de alto volumen y escritura intensiva.
+            </p>
+            <ul class="skill-tags">
+              <li>PostgreSQL</li>
+              <li>PostGIS</li>
+              <li>MySQL</li>
+              <li>MongoDB</li>
+              <li>Cassandra</li>
+            </ul>
+            <p class="skill-applied">
+              <span>Dónde lo he aplicado</span>
+              Almacenamiento y consulta espacial de ~3.000 filas cada 2 minutos
+              en PostgreSQL/PostGIS durante las prácticas; MySQL como base de
+              datos de Tokimori.
+            </p>
+          </article>
+
+          <article class="skill-card reveal-left">
+            <h3>Automatización de procesos</h3>
+            <div class="skill-icons">
+              <img src="assets/img/Habilidades/Portada/n8n.png" alt="" draggable="false" />
+            </div>
+            <p>
+              Diseño flujos en n8n para conectar servicios, APIs y bases de datos
+              y para lanzar procesos de ingesta programados sin necesidad de
+              escribir y mantener un servicio dedicado. Es la pieza que mantiene
+              los datos frescos de forma desatendida.
+            </p>
+            <ul class="skill-tags">
+              <li>n8n</li>
+              <li>Integración de APIs</li>
+              <li>Ingesta programada</li>
+            </ul>
+            <p class="skill-applied">
+              <span>Dónde lo he aplicado</span>
+              Pipeline de telemetría geoespacial del campus: ingesta automatizada
+              cada 2 minutos hacia PostGIS.
+            </p>
+          </article>
+
+          <article class="skill-card reveal-left reveal-2">
+            <h3>DevOps y despliegue</h3>
+            <div class="skill-icons">
+              <img src="assets/img/Habilidades/Portada/docker.png" alt="" draggable="false" />
+            </div>
+            <p>
+              Contenerizo aplicaciones con Docker e imágenes reproducibles,
+              orquesto varios servicios en local con docker-compose y preparo
+              entornos idénticos en desarrollo y despliegue para eliminar el
+              «en mi máquina funciona».
+            </p>
+            <ul class="skill-tags">
+              <li>Docker</li>
+              <li>docker-compose</li>
+              <li>Entornos reproducibles</li>
+            </ul>
+            <p class="skill-applied">
+              <span>Dónde lo he aplicado</span>
+              Despliegue en Docker de la aplicación desarrollada en las prácticas;
+              este mismo portfolio incluye Dockerfile y docker-compose.
+            </p>
+          </article>
+
+          <article class="skill-card reveal-left reveal-3">
+            <h3>Control de versiones</h3>
+            <div class="skill-icons">
+              <img src="assets/img/Habilidades/Portada/git.png" alt="" draggable="false" />
+            </div>
+            <p>
+              Uso Git en flujo colaborativo: ramas por funcionalidad, revisión de
+              cambios, resolución de conflictos y un historial de commits legible.
+              Es la base sobre la que coordino el trabajo cuando el proyecto es de
+              varias personas.
+            </p>
+            <ul class="skill-tags">
+              <li>Git</li>
+              <li>Ramas por funcionalidad</li>
+              <li>Trabajo colaborativo</li>
+            </ul>
+            <p class="skill-applied">
+              <span>Dónde lo he aplicado</span>
+              Todos mis proyectos; coordinación del reparto backend/frontend con
+              el equipo en las prácticas y en el Trabajo de Fin de Grado.
+            </p>
+          </article>
+
+          <article class="skill-card reveal-left">
+            <h3>Testing y CI/CD</h3>
+            <p>
+              Diseño tests unitarios para aislar y verificar la lógica, e integro
+              procesos de integración y despliegue continuos que validan cada
+              cambio de forma automática antes de que llegue a producción. El
+              objetivo es que un fallo se detecte en minutos, no en cliente.
+            </p>
+            <ul class="skill-tags">
+              <li>Tests unitarios</li>
+              <li>Integración continua</li>
+              <li>Despliegue continuo</li>
+            </ul>
+            <p class="skill-applied">
+              <span>Dónde lo he aplicado</span>
+              Pruebas de la API de las prácticas y asignaturas de la mención de
+              Ingeniería del Software centradas en calidad y verificación.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="academicas">
+      <div class="container">
+        <h2 class="section-title reveal-left">Habilidades académicas</h2>
+        <p class="skills-section-desc reveal-left reveal-2">
+          Competencias que provienen directamente de mi formación: el Grado en
+          Ingeniería Informática (Universidad de Almería, 2021-2026) con doble
+          mención en Ingeniería del Software y Sistemas de Información, y el Máster
+          en Ingeniería Informática con especialidad en Big Data; y de mi
+          actividad en un grupo de investigación. No son herramientas concretas,
+          sino la forma de abordar un problema con rigor: analizarlo, diseñar una
+          solución, medirla y comunicarla.
+        </p>
+
+        <ul class="skill-list">
+          <li class="reveal-left">
+            <h3>Ingeniería del Software</h3>
+            <p>
+              Análisis y especificación de requisitos, patrones de diseño,
+              arquitecturas (incluida la de microservicios), modelado UML y
+              criterios de calidad y mantenibilidad. Es la mención que orienta
+              cómo estructuro un proyecto antes de escribir la primera línea de
+              código.
+            </p>
+          </li>
+          <li class="reveal-left">
+            <h3>Sistemas de Información</h3>
+            <p>
+              Modelado conceptual de datos, procesos de negocio e integración
+              entre sistemas heterogéneos. Me permite entender el dominio y las
+              necesidades reales de quien usará el sistema, no solo su parte
+              técnica.
+            </p>
+          </li>
+          <li class="reveal-left">
+            <h3>Big Data (especialidad del Máster)</h3>
+            <p>
+              Procesamiento distribuido con Spark, diseño de pipelines de datos,
+              cómputo en clúster y razonamiento sobre escalabilidad y volumen
+              cuando los datos no caben ni se procesan en una sola máquina.
+            </p>
+          </li>
+          <li class="reveal-left">
+            <h3>Modelado y aprendizaje automático</h3>
+            <p>
+              Construcción, entrenamiento y evaluación de modelos predictivos en
+              Python y diseño de algoritmos de recomendación. Aplicado en el
+              Predictor de burnout y en Auscultify.
+            </p>
+          </li>
+          <li class="reveal-left">
+            <h3>Método científico e investigación</h3>
+            <p>
+              Trabajo en un grupo de investigación de la UAL: formulación de
+              hipótesis, experimentación controlada, medición de resultados e
+              iteración a partir de los datos obtenidos.
+            </p>
+          </li>
+          <li class="reveal-left">
+            <h3>Comunicación técnica y defensa</h3>
+            <p>
+              Redacción de memorias técnicas y defensa oral ante tribunal. Mi
+              Trabajo de Fin de Grado (Auscultify) obtuvo una calificación de
+              9,4/10.
+            </p>
+          </li>
+          <li class="reveal-left">
+            <h3>Pensamiento algorítmico y análisis de complejidad</h3>
+            <p>
+              Descomposición de problemas, elección de estructuras de datos y
+              evaluación del coste de una solución antes de implementarla.
+            </p>
+          </li>
+        </ul>
+
+        <p class="skills-note reveal-left reveal-3">
+          <strong>Para quien evalúa el perfil:</strong> estas competencias son la
+          razón por la que puedo incorporarme a un proyecto o a un dominio nuevo,
+          entenderlo con rapidez y justificar cada decisión técnica, en lugar de
+          limitarme a implementar una especificación cerrada.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="transversales">
+      <div class="container">
+        <h2 class="section-title reveal-left">Habilidades transversales</h2>
+        <p class="skills-section-desc reveal-left reveal-2">
+          Las que en mi CV aparecen como «Habilidades». Las incluyo con una
+          evidencia concreta detrás de cada una, porque enunciadas a secas dicen
+          poco de nadie.
+        </p>
+
+        <ul class="skill-list">
+          <li class="reveal-left">
+            <h3>Trabajo en equipo</h3>
+            <p>
+              Las prácticas y el TFG se desarrollaron en equipo, con un reparto
+              explícito de backend y frontend y coordinación diaria mediante Git y
+              revisiones de código.
+            </p>
+          </li>
+          <li class="reveal-left">
+            <h3>Pensamiento analítico</h3>
+            <p>
+              Descompongo un problema en partes medibles antes de resolverlo; es
+              la base de mi trabajo con datos y con modelos predictivos.
+            </p>
+          </li>
+          <li class="reveal-left">
+            <h3>Gestión del tiempo</h3>
+            <p>
+              Compagino el Máster con jornada laboral completa y con proyectos
+              propios como Tokimori, priorizando tareas y fijando entregas
+              realistas.
+            </p>
+          </li>
+          <li class="reveal-left">
+            <h3>Aprendizaje continuo</h3>
+            <p>
+              He incorporado n8n, PostGIS, Spark y Next.js por necesidad de cada
+              proyecto, aprendiéndolos de forma autónoma y llevándolos hasta
+              producción.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="idiomas">
+      <div class="container">
+        <h2 class="section-title reveal-left">Idiomas</h2>
+        <p class="skills-section-desc reveal-left reveal-2">
+          Nivel de comunicación en entornos técnicos y profesionales.
+        </p>
+
+        <div class="lang-grid">
+          <div class="lang-card reveal-left">
+            <div class="lang-name">Español</div>
+            <p class="lang-level">Nativo</p>
+            <p>Lengua materna.</p>
+          </div>
+          <div class="lang-card reveal-left reveal-2">
+            <div class="lang-name">Inglés</div>
+            <p class="lang-level">B2 · Cambridge First (FCE)</p>
+            <p>
+              Lectura fluida de documentación y especificaciones técnicas, y
+              comunicación escrita y oral en entornos profesionales.
+            </p>
+          </div>
+          <div class="lang-card reveal-left reveal-3">
+            <div class="lang-name">Japonés</div>
+            <p class="lang-level">Nivel inicial · en formación</p>
+            <p>
+              Lectura de los silabarios hiragana y katakana. Actualmente estudio
+              el idioma de forma reglada en una academia.
+            </p>
+          </div>
+        </div>
+
+        <p class="skills-note reveal-left reveal-3">
+          <strong>Nota:</strong> cada tecnología de esta página está respaldada
+          por un proyecto de la sección <a href="proyectos.html">Proyectos</a> o
+          por mi <a href="experiencia.html">Experiencia laboral</a>. Si algo no
+          aparece aquí es, casi siempre, porque todavía no lo he usado en un
+          entorno real.
+        </p>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
