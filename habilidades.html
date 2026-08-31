@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-i18n-title="hab.title">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,27 +29,27 @@
   <link rel="stylesheet" href="assets/css/habilidades.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <a class="skip-link" href="#main" data-i18n="skip">Saltar al contenido</a>
 
   <header class="site-header">
     <nav class="nav container">
       <a href="index.html" class="logo">JC</a>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Sobre mí</a></li>
-        <li><a href="proyectos.html">Proyectos</a></li>
-        <li><a href="experiencia.html">Experiencia laboral</a></li>
-        <li><a href="habilidades.html">Habilidades</a></li>
-        <li><a href="formacion.html">Formación Académica</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="index.html" data-i18n="nav.about">Sobre mí</a></li>
+        <li><a href="proyectos.html" data-i18n="nav.projects">Proyectos</a></li>
+        <li><a href="experiencia.html" data-i18n="nav.experience">Experiencia laboral</a></li>
+        <li><a href="habilidades.html" data-i18n="nav.skills">Habilidades</a></li>
+        <li><a href="formacion.html" data-i18n="nav.education">Formación Académica</a></li>
+        <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
       </ul>
 
       <div class="nav-actions">
-        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">🌙</button>
+        <button class="theme-toggle" id="themeToggle" data-i18n-label="themeToggle" aria-label="Cambiar tema">🌙</button>
         <button class="language-toggle" id="languageToggle" aria-label="Cambiar idioma">🇬🇧</button>
       </div>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <button class="nav-toggle" id="navToggle" data-i18n-label="navToggle" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </nav>
@@ -58,9 +58,9 @@
   <main id="main">
     <section class="skills-hero">
       <div class="container">
-        <p class="skills-eyebrow">Habilidades</p>
-        <h1>Habilidades</h1>
-        <p class="skills-lead">
+        <p class="skills-eyebrow" data-i18n="hab.eyebrow">Habilidades</p>
+        <h1 data-i18n="hab.h1">Habilidades</h1>
+        <p class="skills-lead" data-i18n="hab.lead">
           Esta página desglosa mis competencias en cuatro planos (técnico,
           académico, transversal e idiomático), siguiendo la misma división que
           mi currículum. En cada apartado explico qué incluye y, siempre que es
@@ -69,18 +69,18 @@
           contrastarse con un resultado concreto.
         </p>
         <ul class="skills-toc">
-          <li><a href="#tecnicas">Habilidades técnicas</a></li>
-          <li><a href="#academicas">Habilidades académicas</a></li>
-          <li><a href="#transversales">Habilidades transversales</a></li>
-          <li><a href="#idiomas">Idiomas</a></li>
+          <li><a href="#tecnicas" data-i18n="hab.toc.tech">Habilidades técnicas</a></li>
+          <li><a href="#academicas" data-i18n="hab.toc.academic">Habilidades académicas</a></li>
+          <li><a href="#transversales" data-i18n="hab.toc.soft">Habilidades transversales</a></li>
+          <li><a href="#idiomas" data-i18n="hab.toc.lang">Idiomas</a></li>
         </ul>
       </div>
     </section>
 
     <section class="section section-alt" id="tecnicas">
       <div class="container">
-        <h2 class="section-title reveal-left">Habilidades técnicas</h2>
-        <p class="skills-section-desc reveal-left reveal-2">
+        <h2 class="section-title reveal-left" data-i18n="hab.tech.title">Habilidades técnicas</h2>
+        <p class="skills-section-desc reveal-left reveal-2" data-i18n="hab.tech.desc">
           Herramientas y lenguajes con los que trabajo de forma habitual.
           Mantengo la agrupación de mi CV (lenguajes, frameworks, bases de datos,
           automatización, DevOps, control de versiones y testing) y añado en cada
@@ -91,14 +91,14 @@
 
         <div class="skills-grid">
           <article class="skill-card reveal-left">
-            <h3>Lenguajes de programación</h3>
+            <h3 data-i18n="hab.card.lang.h3">Lenguajes de programación</h3>
             <div class="skill-icons">
               <img src="assets/img/Habilidades/Portada/javascript.png" alt="" draggable="false" />
               <img src="assets/img/Habilidades/Portada/typescript.webp" alt="" draggable="false" />
               <img src="assets/img/Habilidades/Portada/Java.png" alt="" draggable="false" />
               <img src="assets/img/Habilidades/Portada/python.webp" alt="" draggable="false" />
             </div>
-            <p>
+            <p data-i18n="hab.card.lang.p">
               JavaScript y TypeScript son mi base tanto en backend como en
               frontend; uso el tipado estático de TypeScript para modelar el
               dominio y detectar errores antes de ejecutar. Java lo empleo para
@@ -112,7 +112,7 @@
               <li>Python</li>
               <li>R</li>
             </ul>
-            <p class="skill-applied">
+            <p class="skill-applied" data-i18n-html="hab.card.lang.applied">
               <span>Dónde lo he aplicado</span>
               API de las prácticas en JavaScript/TypeScript, modelo predictivo de
               burnout en Python y microservicios de Auscultify combinando Python y
@@ -121,7 +121,7 @@
           </article>
 
           <article class="skill-card reveal-left reveal-2">
-            <h3>Frameworks y tecnologías</h3>
+            <h3 data-i18n="hab.card.fw.h3">Frameworks y tecnologías</h3>
             <div class="skill-icons">
               <img src="assets/img/Habilidades/Portada/nodejs.webp" alt="" draggable="false" />
               <img src="assets/img/Habilidades/Portada/Expressjs.png" alt="" draggable="false" />
@@ -131,7 +131,7 @@
               <img src="assets/img/Habilidades/Portada/spring.svg" alt="" draggable="false" />
               <img src="assets/img/Habilidades/Portada/spark.png" alt="" draggable="false" />
             </div>
-            <p>
+            <p data-i18n="hab.card.fw.p">
               Construyo APIs REST con Node.js y Express.js, e interfaces con React
               y Next.js (renderizado en servidor y rutas dinámicas). Angular lo
               utilizo como alternativa de frontend basada en componentes y
@@ -147,7 +147,7 @@
               <li>Spring</li>
               <li>Spark</li>
             </ul>
-            <p class="skill-applied">
+            <p class="skill-applied" data-i18n-html="hab.card.fw.applied">
               <span>Dónde lo he aplicado</span>
               Frontend del mapa interactivo del campus en Next.js y React, API en
               Node.js + Express.js durante las prácticas, y despliegue de un
@@ -157,13 +157,13 @@
           </article>
 
           <article class="skill-card reveal-left reveal-3">
-            <h3>Bases de datos</h3>
+            <h3 data-i18n="hab.card.db.h3">Bases de datos</h3>
             <div class="skill-icons">
               <img src="assets/img/Habilidades/Portada/postgres.svg" alt="" draggable="false" />
               <img src="assets/img/Habilidades/Portada/mysql.png" alt="" draggable="false" />
               <img src="assets/img/Habilidades/Portada/mongodb.png" alt="" draggable="false" />
             </div>
-            <p>
+            <p data-i18n="hab.card.db.p">
               En SQL modelo esquemas relacionales, escribo consultas y cuido los
               índices (MySQL y PostgreSQL). Con la extensión PostGIS trabajo
               consultas espaciales sobre datos geográficos. En NoSQL manejo
@@ -177,7 +177,7 @@
               <li>MongoDB</li>
               <li>Cassandra</li>
             </ul>
-            <p class="skill-applied">
+            <p class="skill-applied" data-i18n-html="hab.card.db.applied">
               <span>Dónde lo he aplicado</span>
               Almacenamiento y consulta espacial de ~3.000 filas cada 2 minutos
               en PostgreSQL/PostGIS durante las prácticas; MySQL como base de
@@ -186,11 +186,11 @@
           </article>
 
           <article class="skill-card reveal-left">
-            <h3>Automatización de procesos</h3>
+            <h3 data-i18n="hab.card.auto.h3">Automatización de procesos</h3>
             <div class="skill-icons">
               <img src="assets/img/Habilidades/Portada/n8n.png" alt="" draggable="false" />
             </div>
-            <p>
+            <p data-i18n="hab.card.auto.p">
               Diseño flujos en n8n para conectar servicios, APIs y bases de datos
               y para lanzar procesos de ingesta programados sin necesidad de
               escribir y mantener un servicio dedicado. Es la pieza que mantiene
@@ -198,10 +198,10 @@
             </p>
             <ul class="skill-tags">
               <li>n8n</li>
-              <li>Integración de APIs</li>
-              <li>Ingesta programada</li>
+              <li data-i18n="hab.tag.apiIntegration">Integración de APIs</li>
+              <li data-i18n="hab.tag.scheduledIngestion">Ingesta programada</li>
             </ul>
-            <p class="skill-applied">
+            <p class="skill-applied" data-i18n-html="hab.card.auto.applied">
               <span>Dónde lo he aplicado</span>
               Pipeline de telemetría geoespacial del campus: ingesta automatizada
               cada 2 minutos hacia PostGIS.
@@ -209,11 +209,11 @@
           </article>
 
           <article class="skill-card reveal-left reveal-2">
-            <h3>DevOps y despliegue</h3>
+            <h3 data-i18n="hab.card.devops.h3">DevOps y despliegue</h3>
             <div class="skill-icons">
               <img src="assets/img/Habilidades/Portada/docker.png" alt="" draggable="false" />
             </div>
-            <p>
+            <p data-i18n="hab.card.devops.p">
               Contenerizo aplicaciones con Docker e imágenes reproducibles,
               orquesto varios servicios en local con docker-compose y preparo
               entornos idénticos en desarrollo y despliegue para eliminar el
@@ -222,9 +222,9 @@
             <ul class="skill-tags">
               <li>Docker</li>
               <li>docker-compose</li>
-              <li>Entornos reproducibles</li>
+              <li data-i18n="hab.tag.reproducibleEnvs">Entornos reproducibles</li>
             </ul>
-            <p class="skill-applied">
+            <p class="skill-applied" data-i18n-html="hab.card.devops.applied">
               <span>Dónde lo he aplicado</span>
               Despliegue en Docker de la aplicación desarrollada en las prácticas;
               este mismo portfolio incluye Dockerfile y docker-compose.
@@ -232,11 +232,11 @@
           </article>
 
           <article class="skill-card reveal-left reveal-3">
-            <h3>Control de versiones</h3>
+            <h3 data-i18n="hab.card.vcs.h3">Control de versiones</h3>
             <div class="skill-icons">
               <img src="assets/img/Habilidades/Portada/git.png" alt="" draggable="false" />
             </div>
-            <p>
+            <p data-i18n="hab.card.vcs.p">
               Uso Git en flujo colaborativo: ramas por funcionalidad, revisión de
               cambios, resolución de conflictos y un historial de commits legible.
               Es la base sobre la que coordino el trabajo cuando el proyecto es de
@@ -244,10 +244,10 @@
             </p>
             <ul class="skill-tags">
               <li>Git</li>
-              <li>Ramas por funcionalidad</li>
-              <li>Trabajo colaborativo</li>
+              <li data-i18n="hab.tag.featureBranches">Ramas por funcionalidad</li>
+              <li data-i18n="hab.tag.collaboration">Trabajo colaborativo</li>
             </ul>
-            <p class="skill-applied">
+            <p class="skill-applied" data-i18n-html="hab.card.vcs.applied">
               <span>Dónde lo he aplicado</span>
               Todos mis proyectos; coordinación del reparto backend/frontend con
               el equipo en las prácticas y en el Trabajo de Fin de Grado.
@@ -255,19 +255,19 @@
           </article>
 
           <article class="skill-card reveal-left">
-            <h3>Testing y CI/CD</h3>
-            <p>
+            <h3 data-i18n="hab.card.test.h3">Testing y CI/CD</h3>
+            <p data-i18n="hab.card.test.p">
               Diseño tests unitarios para aislar y verificar la lógica, e integro
               procesos de integración y despliegue continuos que validan cada
               cambio de forma automática antes de que llegue a producción. El
               objetivo es que un fallo se detecte en minutos, no en cliente.
             </p>
             <ul class="skill-tags">
-              <li>Tests unitarios</li>
-              <li>Integración continua</li>
-              <li>Despliegue continuo</li>
+              <li data-i18n="hab.tag.unitTests">Tests unitarios</li>
+              <li data-i18n="hab.tag.ci">Integración continua</li>
+              <li data-i18n="hab.tag.cd">Despliegue continuo</li>
             </ul>
-            <p class="skill-applied">
+            <p class="skill-applied" data-i18n-html="hab.card.test.applied">
               <span>Dónde lo he aplicado</span>
               Pruebas de la API de las prácticas y asignaturas de la mención de
               Ingeniería del Software centradas en calidad y verificación.
@@ -279,8 +279,8 @@
 
     <section class="section" id="academicas">
       <div class="container">
-        <h2 class="section-title reveal-left">Habilidades académicas</h2>
-        <p class="skills-section-desc reveal-left reveal-2">
+        <h2 class="section-title reveal-left" data-i18n="hab.academic.title">Habilidades académicas</h2>
+        <p class="skills-section-desc reveal-left reveal-2" data-i18n="hab.academic.desc">
           Competencias que provienen directamente de mi formación: el Grado en
           Ingeniería Informática (Universidad de Almería, 2021-2026) con doble
           mención en Ingeniería del Software y Sistemas de Información, y el Máster
@@ -292,8 +292,8 @@
 
         <ul class="skill-list">
           <li class="reveal-left">
-            <h3>Ingeniería del Software</h3>
-            <p>
+            <h3 data-i18n="hab.academic.se.h3">Ingeniería del Software</h3>
+            <p data-i18n="hab.academic.se.p">
               Análisis y especificación de requisitos, patrones de diseño,
               arquitecturas (incluida la de microservicios), modelado UML y
               criterios de calidad y mantenibilidad. Es la mención que orienta
@@ -302,8 +302,8 @@
             </p>
           </li>
           <li class="reveal-left">
-            <h3>Sistemas de Información</h3>
-            <p>
+            <h3 data-i18n="hab.academic.is.h3">Sistemas de Información</h3>
+            <p data-i18n="hab.academic.is.p">
               Modelado conceptual de datos, procesos de negocio e integración
               entre sistemas heterogéneos. Me permite entender el dominio y las
               necesidades reales de quien usará el sistema, no solo su parte
@@ -311,47 +311,47 @@
             </p>
           </li>
           <li class="reveal-left">
-            <h3>Big Data (especialidad del Máster)</h3>
-            <p>
+            <h3 data-i18n="hab.academic.bd.h3">Big Data (especialidad del Máster)</h3>
+            <p data-i18n="hab.academic.bd.p">
               Procesamiento distribuido con Spark, diseño de pipelines de datos,
               cómputo en clúster y razonamiento sobre escalabilidad y volumen
               cuando los datos no caben ni se procesan en una sola máquina.
             </p>
           </li>
           <li class="reveal-left">
-            <h3>Modelado y aprendizaje automático</h3>
-            <p>
+            <h3 data-i18n="hab.academic.ml.h3">Modelado y aprendizaje automático</h3>
+            <p data-i18n="hab.academic.ml.p">
               Construcción, entrenamiento y evaluación de modelos predictivos en
               Python y diseño de algoritmos de recomendación. Aplicado en el
               Predictor de burnout y en Auscultify.
             </p>
           </li>
           <li class="reveal-left">
-            <h3>Método científico e investigación</h3>
-            <p>
+            <h3 data-i18n="hab.academic.research.h3">Método científico e investigación</h3>
+            <p data-i18n="hab.academic.research.p">
               Trabajo en un grupo de investigación de la UAL: formulación de
               hipótesis, experimentación controlada, medición de resultados e
               iteración a partir de los datos obtenidos.
             </p>
           </li>
           <li class="reveal-left">
-            <h3>Comunicación técnica y defensa</h3>
-            <p>
+            <h3 data-i18n="hab.academic.comm.h3">Comunicación técnica y defensa</h3>
+            <p data-i18n="hab.academic.comm.p">
               Redacción de memorias técnicas y defensa oral ante tribunal. Mi
               Trabajo de Fin de Grado (Auscultify) obtuvo una calificación de
               9,4/10.
             </p>
           </li>
           <li class="reveal-left">
-            <h3>Pensamiento algorítmico y análisis de complejidad</h3>
-            <p>
+            <h3 data-i18n="hab.academic.algo.h3">Pensamiento algorítmico y análisis de complejidad</h3>
+            <p data-i18n="hab.academic.algo.p">
               Descomposición de problemas, elección de estructuras de datos y
               evaluación del coste de una solución antes de implementarla.
             </p>
           </li>
         </ul>
 
-        <p class="skills-note reveal-left reveal-3">
+        <p class="skills-note reveal-left reveal-3" data-i18n-html="hab.academic.note">
           <strong>Para quien evalúa el perfil:</strong> estas competencias son la
           razón por la que puedo incorporarme a un proyecto o a un dominio nuevo,
           entenderlo con rapidez y justificar cada decisión técnica, en lugar de
@@ -362,8 +362,8 @@
 
     <section class="section section-alt" id="transversales">
       <div class="container">
-        <h2 class="section-title reveal-left">Habilidades transversales</h2>
-        <p class="skills-section-desc reveal-left reveal-2">
+        <h2 class="section-title reveal-left" data-i18n="hab.soft.title">Habilidades transversales</h2>
+        <p class="skills-section-desc reveal-left reveal-2" data-i18n="hab.soft.desc">
           Las que en mi CV aparecen como «Habilidades». Las incluyo con una
           evidencia concreta detrás de cada una, porque enunciadas a secas dicen
           poco de nadie.
@@ -371,31 +371,31 @@
 
         <ul class="skill-list">
           <li class="reveal-left">
-            <h3>Trabajo en equipo</h3>
-            <p>
+            <h3 data-i18n="hab.soft.team.h3">Trabajo en equipo</h3>
+            <p data-i18n="hab.soft.team.p">
               Las prácticas y el TFG se desarrollaron en equipo, con un reparto
               explícito de backend y frontend y coordinación diaria mediante Git y
               revisiones de código.
             </p>
           </li>
           <li class="reveal-left">
-            <h3>Pensamiento analítico</h3>
-            <p>
+            <h3 data-i18n="hab.soft.analytical.h3">Pensamiento analítico</h3>
+            <p data-i18n="hab.soft.analytical.p">
               Descompongo un problema en partes medibles antes de resolverlo; es
               la base de mi trabajo con datos y con modelos predictivos.
             </p>
           </li>
           <li class="reveal-left">
-            <h3>Gestión del tiempo</h3>
-            <p>
+            <h3 data-i18n="hab.soft.time.h3">Gestión del tiempo</h3>
+            <p data-i18n="hab.soft.time.p">
               Compagino el Máster con jornada laboral completa y con proyectos
               propios como Tokimori, priorizando tareas y fijando entregas
               realistas.
             </p>
           </li>
           <li class="reveal-left">
-            <h3>Aprendizaje continuo</h3>
-            <p>
+            <h3 data-i18n="hab.soft.learning.h3">Aprendizaje continuo</h3>
+            <p data-i18n="hab.soft.learning.p">
               He incorporado n8n, PostGIS, Spark y Next.js por necesidad de cada
               proyecto, aprendiéndolos de forma autónoma y llevándolos hasta
               producción.
@@ -407,36 +407,36 @@
 
     <section class="section" id="idiomas">
       <div class="container">
-        <h2 class="section-title reveal-left">Idiomas</h2>
-        <p class="skills-section-desc reveal-left reveal-2">
+        <h2 class="section-title reveal-left" data-i18n="hab.lang.title">Idiomas</h2>
+        <p class="skills-section-desc reveal-left reveal-2" data-i18n="hab.lang.desc">
           Nivel de comunicación en entornos técnicos y profesionales.
         </p>
 
         <div class="lang-grid">
           <div class="lang-card reveal-left">
-            <div class="lang-name">Español</div>
-            <p class="lang-level">Nativo</p>
-            <p>Lengua materna.</p>
+            <div class="lang-name" data-i18n="hab.lang.es.name">Español</div>
+            <p class="lang-level" data-i18n="hab.lang.es.level">Nativo</p>
+            <p data-i18n="hab.lang.es.p">Lengua materna.</p>
           </div>
           <div class="lang-card reveal-left reveal-2">
-            <div class="lang-name">Inglés</div>
-            <p class="lang-level">B2 · Cambridge First (FCE)</p>
-            <p>
+            <div class="lang-name" data-i18n="hab.lang.en.name">Inglés</div>
+            <p class="lang-level" data-i18n="hab.lang.en.level">B2 · Cambridge First (FCE)</p>
+            <p data-i18n="hab.lang.en.p">
               Lectura fluida de documentación y especificaciones técnicas, y
               comunicación escrita y oral en entornos profesionales.
             </p>
           </div>
           <div class="lang-card reveal-left reveal-3">
-            <div class="lang-name">Japonés</div>
-            <p class="lang-level">Nivel inicial · en formación</p>
-            <p>
+            <div class="lang-name" data-i18n="hab.lang.jp.name">Japonés</div>
+            <p class="lang-level" data-i18n="hab.lang.jp.level">Nivel inicial · en formación</p>
+            <p data-i18n="hab.lang.jp.p">
               Lectura de los silabarios hiragana y katakana. Actualmente estudio
               el idioma de forma reglada en una academia.
             </p>
           </div>
         </div>
 
-        <p class="skills-note reveal-left reveal-3">
+        <p class="skills-note reveal-left reveal-3" data-i18n-html="hab.lang.note">
           <strong>Nota:</strong> cada tecnología de esta página está respaldada
           por un proyecto de la sección <a href="proyectos.html">Proyectos</a> o
           por mi <a href="experiencia.html">Experiencia laboral</a>. Si algo no
@@ -450,8 +450,8 @@
   <footer class="site-footer">
     <div class="container">
       <ul class="footer-contact">
-        <li>Email: <a href="mailto:josecarlosruizsan@gmail.com">josecarlosruizsan@gmail.com</a></li>
-        <li>Teléfono: <a href="tel:+34608257574">+34 608257574</a></li>
+        <li data-i18n-html="footer.email">Email: <a href="mailto:josecarlosruizsan@gmail.com">josecarlosruizsan@gmail.com</a></li>
+        <li data-i18n-html="footer.phone">Teléfono: <a href="tel:+34608257574">+34 608257574</a></li>
         <li>GitHub: <a href="https://github.com/jrs407">github.com/jrs407</a></li>
         <li>LinkedIn: <a href="https://www.linkedin.com/in/jose-carlos-ruiz-sanchez/">linkedin.com/in/jose-carlos-ruiz-sanchez</a></li>
       </ul>

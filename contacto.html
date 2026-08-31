@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-i18n-title="con.title">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,27 +29,27 @@
   <link rel="stylesheet" href="assets/css/contacto.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <a class="skip-link" href="#main" data-i18n="skip">Saltar al contenido</a>
 
   <header class="site-header">
     <nav class="nav container">
       <a href="index.html" class="logo">JC</a>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Sobre mí</a></li>
-        <li><a href="proyectos.html">Proyectos</a></li>
-        <li><a href="experiencia.html">Experiencia laboral</a></li>
-        <li><a href="habilidades.html">Habilidades</a></li>
-        <li><a href="formacion.html">Formación Académica</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="index.html" data-i18n="nav.about">Sobre mí</a></li>
+        <li><a href="proyectos.html" data-i18n="nav.projects">Proyectos</a></li>
+        <li><a href="experiencia.html" data-i18n="nav.experience">Experiencia laboral</a></li>
+        <li><a href="habilidades.html" data-i18n="nav.skills">Habilidades</a></li>
+        <li><a href="formacion.html" data-i18n="nav.education">Formación Académica</a></li>
+        <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
       </ul>
 
       <div class="nav-actions">
-        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">🌙</button>
+        <button class="theme-toggle" id="themeToggle" data-i18n-label="themeToggle" aria-label="Cambiar tema">🌙</button>
         <button class="language-toggle" id="languageToggle" aria-label="Cambiar idioma">🇬🇧</button>
       </div>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <button class="nav-toggle" id="navToggle" data-i18n-label="navToggle" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </nav>
@@ -58,9 +58,9 @@
   <main id="main">
     <section class="contact-hero">
       <div class="container">
-        <p class="contact-eyebrow">Contacto</p>
-        <h1>Contacto</h1>
-        <p class="contact-lead">
+        <p class="contact-eyebrow" data-i18n="con.eyebrow">Contacto</p>
+        <h1 data-i18n="con.h1">Contacto</h1>
+        <p class="contact-lead" data-i18n="con.lead">
           Esta página reúne en un solo sitio todo lo que necesitas para
           ponerte en contacto conmigo y para valorar si encajo en tu proceso:
           los canales por los que puedes contactarme, mi disponibilidad real de
@@ -69,44 +69,44 @@
           currículum y todos los datos coinciden con el pie de esta web.
         </p>
         <div class="contact-actions">
-          <a href="tel:+34608257574" class="btn btn-primary">Llámame</a>
-          <a href="mailto:josecarlosruizsan@gmail.com" class="btn btn-ghost">Enviar un correo</a>
-          <a href="assets/cv/CV - Jose Carlos Ruiz Sanchez.pdf" class="btn btn-ghost" download>Descargar currículum (PDF)</a>
+          <a href="tel:+34608257574" class="btn btn-primary" data-i18n="con.action.call">Llámame</a>
+          <a href="mailto:josecarlosruizsan@gmail.com" class="btn btn-ghost" data-i18n="con.action.email">Enviar un correo</a>
+          <a href="assets/cv/CV - Jose Carlos Ruiz Sanchez.pdf" class="btn btn-ghost" download data-i18n="con.action.cv">Descargar currículum (PDF)</a>
         </div>
         <ul class="contact-toc">
-          <li><a href="#canales">Canales de contacto</a></li>
-          <li><a href="#disponibilidad">Disponibilidad</a></li>
-          <li><a href="#faq">Preguntas frecuentes</a></li>
+          <li><a href="#canales" data-i18n="con.toc.channels">Canales de contacto</a></li>
+          <li><a href="#disponibilidad" data-i18n="con.toc.availability">Disponibilidad</a></li>
+          <li><a href="#faq" data-i18n="con.toc.faq">Preguntas frecuentes</a></li>
         </ul>
       </div>
     </section>
 
     <section class="section section-alt" id="canales">
       <div class="container">
-        <h2 class="section-title reveal-left">Canales de contacto</h2>
-        <p class="contact-section-desc reveal-left reveal-2">
+        <h2 class="section-title reveal-left" data-i18n="con.channels.title">Canales de contacto</h2>
+        <p class="contact-section-desc reveal-left reveal-2" data-i18n="con.channels.desc">
           Los mismos datos que aparecen en el pie de esta web y en mi CV. Para
           una primera toma de contacto prefiero una llamada.
         </p>
 
         <div class="contact-grid">
           <article class="contact-card reveal-left">
-            <p class="contact-channel">Teléfono</p>
+            <p class="contact-channel" data-i18n="con.channel.phone">Teléfono</p>
             <a class="contact-value" href="tel:+34608257574">+34 608 25 75 74</a>
           </article>
 
           <article class="contact-card reveal-left reveal-2">
-            <p class="contact-channel">Correo electrónico</p>
+            <p class="contact-channel" data-i18n="con.channel.email">Correo electrónico</p>
             <a class="contact-value" href="mailto:josecarlosruizsan@gmail.com">josecarlosruizsan@gmail.com</a>
           </article>
 
           <article class="contact-card reveal-left reveal-3">
-            <p class="contact-channel">LinkedIn</p>
+            <p class="contact-channel" data-i18n="con.channel.linkedin">LinkedIn</p>
             <a class="contact-value" href="https://www.linkedin.com/in/jose-carlos-ruiz-sanchez/">linkedin.com/in/jose-carlos-ruiz-sanchez</a>
           </article>
 
           <article class="contact-card reveal-left">
-            <p class="contact-channel">GitHub</p>
+            <p class="contact-channel" data-i18n="con.channel.github">GitHub</p>
             <a class="contact-value" href="https://github.com/jrs407">github.com/jrs407</a>
           </article>
         </div>
@@ -115,39 +115,39 @@
 
     <section class="section" id="disponibilidad">
       <div class="container">
-        <h2 class="section-title reveal-left">Disponibilidad</h2>
-        <p class="contact-section-desc reveal-left reveal-2">
+        <h2 class="section-title reveal-left" data-i18n="con.avail.title">Disponibilidad</h2>
+        <p class="contact-section-desc reveal-left reveal-2" data-i18n="con.avail.desc">
           Tal y como figura en mi currículum, desglosada aquí para que se
           entienda sin ambigüedad qué puedo ofrecer desde el primer día.
         </p>
 
         <ul class="contact-list">
           <li class="reveal-left">
-            <h3>Incorporación inmediata</h3>
-            <p>
+            <h3 data-i18n="con.avail.start.h3">Incorporación inmediata</h3>
+            <p data-i18n="con.avail.start.p">
               Puedo empezar sin periodo de preaviso. Actualmente curso el
               Máster en Ingeniería Informática, compatible con jornada laboral
               completa.
             </p>
           </li>
           <li class="reveal-left">
-            <h3>Modalidad flexible</h3>
-            <p>
+            <h3 data-i18n="con.avail.mode.h3">Modalidad flexible</h3>
+            <p data-i18n="con.avail.mode.p">
               Presencial, híbrida o remota, según lo que necesite el equipo.
               Ya he trabajado en remoto con coordinación diaria por Git y
               revisiones de código durante mis prácticas.
             </p>
           </li>
           <li class="reveal-left">
-            <h3>Movilidad geográfica</h3>
-            <p>
+            <h3 data-i18n="con.avail.mobility.h3">Movilidad geográfica</h3>
+            <p data-i18n="con.avail.mobility.p">
               Con base en Málaga y con posibilidad de movilización a cualquier
               punto de España para un puesto presencial o híbrido.
             </p>
           </li>
           <li class="reveal-left">
-            <h3>Jornada e idioma de trabajo</h3>
-            <p>
+            <h3 data-i18n="con.avail.hours.h3">Jornada e idioma de trabajo</h3>
+            <p data-i18n="con.avail.hours.p">
               Disponible a jornada completa. Idioma de trabajo español; inglés
               B2 (Cambridge First) para documentación y comunicación en entornos
               técnicos.
@@ -159,38 +159,38 @@
 
     <section class="section section-alt" id="faq">
       <div class="container">
-        <h2 class="section-title reveal-left">Preguntas frecuentes</h2>
-        <p class="contact-section-desc reveal-left reveal-2">
+        <h2 class="section-title reveal-left" data-i18n="con.faq.title">Preguntas frecuentes</h2>
+        <p class="contact-section-desc reveal-left reveal-2" data-i18n="con.faq.desc">
           Las dudas que suelen aparecer en una primera conversación, resueltas
           de antemano para ahorrar el correo de ida y vuelta.
         </p>
 
         <ul class="faq-list">
           <li class="reveal-left">
-            <h3>¿Cuál es la mejor forma de contactarte?</h3>
-            <p>
+            <h3 data-i18n="con.faq.q1.h3">¿Cuál es la mejor forma de contactarte?</h3>
+            <p data-i18n="con.faq.q1.p">
               Una llamada al +34 608 25 75 74. Si lo prefieres por escrito,
               escríbeme un correo.
             </p>
           </li>
           <li class="reveal-left">
-            <h3>¿Estás disponible ya?</h3>
-            <p>
+            <h3 data-i18n="con.faq.q2.h3">¿Estás disponible ya?</h3>
+            <p data-i18n="con.faq.q2.p">
               Sí: incorporación inmediata y a jornada completa. El Máster que
               curso es compatible con el horario laboral.
             </p>
           </li>
           <li class="reveal-left">
-            <h3>¿Trabajas en remoto?</h3>
-            <p>
+            <h3 data-i18n="con.faq.q3.h3">¿Trabajas en remoto?</h3>
+            <p data-i18n="con.faq.q3.p">
               Sí, y también presencial o híbrido. Ya he trabajado en remoto con
               un equipo repartido, coordinándonos por Git y revisiones de
               código.
             </p>
           </li>
           <li class="reveal-left">
-            <h3>¿Puedo ver tu código?</h3>
-            <p>
+            <h3 data-i18n="con.faq.q4.h3">¿Puedo ver tu código?</h3>
+            <p data-i18n-html="con.faq.q4.p">
               Parte está publicada en
               <a href="https://github.com/jrs407">github.com/jrs407</a>, junto al
               código de este portfolio. Algunos proyectos tienen el repositorio
@@ -201,8 +201,8 @@
             </p>
           </li>
           <li class="reveal-left">
-            <h3>¿Tienes CV en PDF?</h3>
-            <p>
+            <h3 data-i18n="con.faq.q5.h3">¿Tienes CV en PDF?</h3>
+            <p data-i18n-html="con.faq.q5.p">
               Sí:
               <a href="assets/cv/CV - Jose Carlos Ruiz Sanchez.pdf" download>descárgalo aquí</a>.
               Esta web amplía cada sección de ese documento con contexto real.
@@ -210,7 +210,7 @@
           </li>
         </ul>
 
-        <p class="contact-note reveal-left reveal-3">
+        <p class="contact-note reveal-left reveal-3" data-i18n-html="con.note">
           <strong>Para quien evalúa el perfil:</strong> los datos de
           disponibilidad de esta página están actualizados a agosto de 2026. Si
           algo ha cambiado cuando la leas, o si necesitas una referencia,
@@ -225,8 +225,8 @@
   <footer class="site-footer">
     <div class="container">
       <ul class="footer-contact">
-        <li>Email: <a href="mailto:josecarlosruizsan@gmail.com">josecarlosruizsan@gmail.com</a></li>
-        <li>Teléfono: <a href="tel:+34608257574">+34 608257574</a></li>
+        <li data-i18n-html="footer.email">Email: <a href="mailto:josecarlosruizsan@gmail.com">josecarlosruizsan@gmail.com</a></li>
+        <li data-i18n-html="footer.phone">Teléfono: <a href="tel:+34608257574">+34 608257574</a></li>
         <li>GitHub: <a href="https://github.com/jrs407">github.com/jrs407</a></li>
         <li>LinkedIn: <a href="https://www.linkedin.com/in/jose-carlos-ruiz-sanchez/">linkedin.com/in/jose-carlos-ruiz-sanchez</a></li>
       </ul>

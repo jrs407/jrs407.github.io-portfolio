@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-i18n-title="index.title">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -50,27 +50,27 @@
   </script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <a class="skip-link" href="#main" data-i18n="skip">Saltar al contenido</a>
 
   <header class="site-header">
     <nav class="nav container">
       <a href="index.html" class="logo">JC</a>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Sobre mí</a></li>
-        <li><a href="proyectos.html">Proyectos</a></li>
-        <li><a href="experiencia.html">Experiencia laboral</a></li>
-        <li><a href="habilidades.html">Habilidades</a></li>
-        <li><a href="formacion.html">Formación Académica</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="index.html" data-i18n="nav.about">Sobre mí</a></li>
+        <li><a href="proyectos.html" data-i18n="nav.projects">Proyectos</a></li>
+        <li><a href="experiencia.html" data-i18n="nav.experience">Experiencia laboral</a></li>
+        <li><a href="habilidades.html" data-i18n="nav.skills">Habilidades</a></li>
+        <li><a href="formacion.html" data-i18n="nav.education">Formación Académica</a></li>
+        <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
       </ul>
 
       <div class="nav-actions">
-        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">🌙</button>
+        <button class="theme-toggle" id="themeToggle" data-i18n-label="themeToggle" aria-label="Cambiar tema">🌙</button>
         <button class="language-toggle" id="languageToggle" aria-label="Cambiar idioma">🇬🇧</button>
       </div>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <button class="nav-toggle" id="navToggle" data-i18n-label="navToggle" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </nav>
@@ -79,16 +79,16 @@
   <main id="main">
     <section class="hero container" id="home">
       <h1>José Carlos Ruiz Sánchez</h1>
-      <p class="hero-role">Desarrollador Full-stack</p>
+      <p class="hero-role" data-i18n="hero.role">Desarrollador Full-stack</p>
       <p class="hero-text">Node.js · Express.js · React · Angular · PostgreSQL/PostGIS · Docker · n8n </p>
 
       <div class="hero-intro">
         <div class="hero-image">
-          <img src="assets/img/Foto.jpg" alt="Imagen de presentación" />
+          <img src="assets/img/Foto.jpg" data-i18n-alt="hero.imageAlt" alt="Imagen de presentación" />
         </div>
         <div class="hero-copy">
-          <h2 class="hero-intro-title">Sobre mí</h2>
-          <p class="hero-intro-text">
+          <h2 class="hero-intro-title" data-i18n="hero.introTitle">Sobre mí</h2>
+          <p class="hero-intro-text" data-i18n="hero.introText">
             Desarrollador full-stack. En prácticas construí en equipo, backend y
             frontend, un mapa interactivo que muestra la actividad de usuarios en el
             campus de la Universidad de Almería, con datos actualizados cada 2
@@ -100,9 +100,9 @@
       </div>
 
       <div class="hero-actions">
-        <a href="proyectos.html" class="btn btn-primary">Ver proyectos</a>
-        <a href="contacto.html" class="btn btn-ghost">Contactar</a>
-        <a href="assets/cv/CV - Jose Carlos Ruiz Sanchez.pdf" class="btn btn-ghost" download>Descargar currículum</a>
+        <a href="proyectos.html" class="btn btn-primary" data-i18n="cta.viewProjects">Ver proyectos</a>
+        <a href="contacto.html" class="btn btn-ghost" data-i18n="hero.contact">Contactar</a>
+        <a href="assets/cv/CV - Jose Carlos Ruiz Sanchez.pdf" class="btn btn-ghost" download data-i18n="hero.downloadCv">Descargar currículum</a>
       </div>
       <div class="hero-social">
         <!-- TODO: añade tus enlaces reales (GitHub, LinkedIn, email, etc.) -->
@@ -112,45 +112,45 @@
     <section class="section" id="projects">
       <div class="projects-panel">
         <div class="projects-panel-inner">
-          <h2 class="section-title reveal-left">Proyectos</h2>
+          <h2 class="section-title reveal-left" data-i18n="section.projects">Proyectos</h2>
 
           <div class="carousel reveal-left reveal-2" id="projectsCarousel">
-            <button class="carousel-arrow carousel-arrow--prev" type="button" aria-label="Anterior">&#8249;</button>
+            <button class="carousel-arrow carousel-arrow--prev" type="button" data-i18n-label="carousel.prev" aria-label="Anterior">&#8249;</button>
 
             <div class="carousel-viewport">
               <ul class="carousel-track">
                 <li class="carousel-slide">
                   <a class="carousel-link" href="#proyecto-1">
-                    <img class="carousel-img" src="assets/img/placeholder.svg" alt="Imagen del proyecto 1" draggable="false" />
+                    <img class="carousel-img" src="assets/img/placeholder.svg" data-i18n-alt="projects.img1" alt="Imagen del proyecto 1" draggable="false" />
                   </a>
-                  <h3 class="carousel-caption">Proyecto 1</h3>
+                  <h3 class="carousel-caption" data-i18n="projects.item1">Proyecto 1</h3>
                 </li>
                 <li class="carousel-slide">
                   <a class="carousel-link" href="#proyecto-2">
-                    <img class="carousel-img" src="assets/img/placeholder.svg" alt="Imagen del proyecto 2" draggable="false" />
+                    <img class="carousel-img" src="assets/img/placeholder.svg" data-i18n-alt="projects.img2" alt="Imagen del proyecto 2" draggable="false" />
                   </a>
-                  <h3 class="carousel-caption">Proyecto 2</h3>
+                  <h3 class="carousel-caption" data-i18n="projects.item2">Proyecto 2</h3>
                 </li>
                 <li class="carousel-slide">
                   <a class="carousel-link" href="#proyecto-3">
-                    <img class="carousel-img" src="assets/img/placeholder.svg" alt="Imagen del proyecto 3" draggable="false" />
+                    <img class="carousel-img" src="assets/img/placeholder.svg" data-i18n-alt="projects.img3" alt="Imagen del proyecto 3" draggable="false" />
                   </a>
-                  <h3 class="carousel-caption">Proyecto 3</h3>
+                  <h3 class="carousel-caption" data-i18n="projects.item3">Proyecto 3</h3>
                 </li>
                 <li class="carousel-slide">
                   <a class="carousel-link" href="#proyecto-4">
-                    <img class="carousel-img" src="assets/img/placeholder.svg" alt="Imagen del proyecto 4" draggable="false" />
+                    <img class="carousel-img" src="assets/img/placeholder.svg" data-i18n-alt="projects.img4" alt="Imagen del proyecto 4" draggable="false" />
                   </a>
-                  <h3 class="carousel-caption">Proyecto 4</h3>
+                  <h3 class="carousel-caption" data-i18n="projects.item4">Proyecto 4</h3>
                 </li>
               </ul>
             </div>
 
-            <button class="carousel-arrow carousel-arrow--next" type="button" aria-label="Siguiente">&#8250;</button>
+            <button class="carousel-arrow carousel-arrow--next" type="button" data-i18n-label="carousel.next" aria-label="Siguiente">&#8250;</button>
           </div>
 
           <div class="carousel-cta reveal-left reveal-3">
-            <a href="proyectos.html" class="btn btn-primary">Ver proyectos</a>
+            <a href="proyectos.html" class="btn btn-primary" data-i18n="cta.viewProjects">Ver proyectos</a>
           </div>
         </div>
       </div>
@@ -159,45 +159,45 @@
     <section class="section" id="experience">
       <div class="experience-panel">
         <div class="experience-panel-inner">
-          <h2 class="section-title reveal-left">Experiencia laboral</h2>
+          <h2 class="section-title reveal-left" data-i18n="section.experience">Experiencia laboral</h2>
 
           <div class="carousel reveal-left reveal-2" id="experienceCarousel">
-            <button class="carousel-arrow carousel-arrow--prev" type="button" aria-label="Anterior">&#8249;</button>
+            <button class="carousel-arrow carousel-arrow--prev" type="button" data-i18n-label="carousel.prev" aria-label="Anterior">&#8249;</button>
 
             <div class="carousel-viewport">
               <ul class="carousel-track">
                 <li class="carousel-slide">
                   <a class="carousel-link" href="#experiencia-1">
-                    <img class="carousel-img" src="assets/img/placeholder.svg" alt="Imagen de la experiencia 1" draggable="false" />
+                    <img class="carousel-img" src="assets/img/placeholder.svg" data-i18n-alt="experience.img1" alt="Imagen de la experiencia 1" draggable="false" />
                   </a>
-                  <h3 class="carousel-caption">Experiencia 1</h3>
+                  <h3 class="carousel-caption" data-i18n="experience.item1">Experiencia 1</h3>
                 </li>
                 <li class="carousel-slide">
                   <a class="carousel-link" href="#experiencia-2">
-                    <img class="carousel-img" src="assets/img/placeholder.svg" alt="Imagen de la experiencia 2" draggable="false" />
+                    <img class="carousel-img" src="assets/img/placeholder.svg" data-i18n-alt="experience.img2" alt="Imagen de la experiencia 2" draggable="false" />
                   </a>
-                  <h3 class="carousel-caption">Experiencia 2</h3>
+                  <h3 class="carousel-caption" data-i18n="experience.item2">Experiencia 2</h3>
                 </li>
                 <li class="carousel-slide">
                   <a class="carousel-link" href="#experiencia-3">
-                    <img class="carousel-img" src="assets/img/placeholder.svg" alt="Imagen de la experiencia 3" draggable="false" />
+                    <img class="carousel-img" src="assets/img/placeholder.svg" data-i18n-alt="experience.img3" alt="Imagen de la experiencia 3" draggable="false" />
                   </a>
-                  <h3 class="carousel-caption">Experiencia 3</h3>
+                  <h3 class="carousel-caption" data-i18n="experience.item3">Experiencia 3</h3>
                 </li>
                 <li class="carousel-slide">
                   <a class="carousel-link" href="#experiencia-4">
-                    <img class="carousel-img" src="assets/img/placeholder.svg" alt="Imagen de la experiencia 4" draggable="false" />
+                    <img class="carousel-img" src="assets/img/placeholder.svg" data-i18n-alt="experience.img4" alt="Imagen de la experiencia 4" draggable="false" />
                   </a>
-                  <h3 class="carousel-caption">Experiencia 4</h3>
+                  <h3 class="carousel-caption" data-i18n="experience.item4">Experiencia 4</h3>
                 </li>
               </ul>
             </div>
 
-            <button class="carousel-arrow carousel-arrow--next" type="button" aria-label="Siguiente">&#8250;</button>
+            <button class="carousel-arrow carousel-arrow--next" type="button" data-i18n-label="carousel.next" aria-label="Siguiente">&#8250;</button>
           </div>
 
           <div class="carousel-cta reveal-left reveal-3">
-            <a href="experiencia.html" class="btn btn-primary">Ver experiencia</a>
+            <a href="experiencia.html" class="btn btn-primary" data-i18n="cta.viewExperience">Ver experiencia</a>
           </div>
         </div>
       </div>
@@ -205,10 +205,10 @@
 
     <section class="section section-alt" id="skills">
       <div class="container">
-        <h2 class="section-title reveal-left">Habilidades Técnicas</h2>
+        <h2 class="section-title reveal-left" data-i18n="section.skills">Habilidades Técnicas</h2>
 
         <div class="carousel carousel--compact reveal-left reveal-2" id="skillsCarousel" data-per-view="6" data-per-view-mobile="2">
-          <button class="carousel-arrow carousel-arrow--prev" type="button" aria-label="Anterior">&#8249;</button>
+          <button class="carousel-arrow carousel-arrow--prev" type="button" data-i18n-label="carousel.prev" aria-label="Anterior">&#8249;</button>
 
           <div class="carousel-viewport">
             <ul class="carousel-track">
@@ -317,11 +317,11 @@
             </ul>
           </div>
 
-          <button class="carousel-arrow carousel-arrow--next" type="button" aria-label="Siguiente">&#8250;</button>
+          <button class="carousel-arrow carousel-arrow--next" type="button" data-i18n-label="carousel.next" aria-label="Siguiente">&#8250;</button>
         </div>
 
         <div class="carousel-cta reveal-left reveal-3">
-          <a href="habilidades.html" class="btn btn-primary">Ver habilidades</a>
+          <a href="habilidades.html" class="btn btn-primary" data-i18n="cta.viewSkills">Ver habilidades</a>
         </div>
       </div>
     </section>
@@ -330,8 +330,8 @@
   <footer class="site-footer">
     <div class="container">
       <ul class="footer-contact">
-        <li>Email: <a href="mailto:josecarlosruizsan@gmail.com">josecarlosruizsan@gmail.com</a></li>
-        <li>Teléfono: <a href="tel:+34608257574">+34 608257574</a></li>
+        <li data-i18n-html="footer.email">Email: <a href="mailto:josecarlosruizsan@gmail.com">josecarlosruizsan@gmail.com</a></li>
+        <li data-i18n-html="footer.phone">Teléfono: <a href="tel:+34608257574">+34 608257574</a></li>
         <li>GitHub: <a href="https://github.com/jrs407">github.com/jrs407</a></li>
         <li>LinkedIn: <a href="https://www.linkedin.com/in/jose-carlos-ruiz-sanchez/">linkedin.com/in/jose-carlos-ruiz-sanchez</a></li>
       </ul>
