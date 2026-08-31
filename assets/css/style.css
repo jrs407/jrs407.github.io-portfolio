@@ -377,6 +377,14 @@ img {
   max-width: 680px;
 }
 
+.section-placeholder {
+  color: var(--text-muted);
+  max-width: 680px;
+  margin-top: 1rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
 /* Projects */
 .projects-grid {
   display: grid;

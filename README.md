@@ -1,6 +1,22 @@
 # jrs407.github.io-portfolio
 
+> ⚠️ **En desarrollo.** Esta página web está en construcción activa y su contenido
+> puede cambiar en cualquier momento. Las secciones **Proyectos**, **Experiencia
+> laboral** y **Formación Académica** todavía muestran un texto provisional de
+> "Sección en construcción"; el resto de páginas siguen puliéndose.
+
 Portfolio personal construido con HTML, CSS y JavaScript puro (sin frameworks ni build step), listo para GitHub Pages.
+
+## Estado
+
+| Página | Estado |
+| --- | --- |
+| `index.html` (Sobre mí) | En pulido |
+| `habilidades.html` | En pulido |
+| `contacto.html` | En pulido |
+| `proyectos.html` | Pendiente — placeholder "en construcción" |
+| `experiencia.html` | Pendiente — placeholder "en construcción" |
+| `formacion.html` | Pendiente — placeholder "en construcción" |
 
 ## Estructura
 
