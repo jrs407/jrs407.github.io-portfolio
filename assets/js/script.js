@@ -70,14 +70,8 @@ const TRANSLATIONS = {
     "projects.img2": "Imagen del proyecto 2",
     "projects.img3": "Imagen del proyecto 3",
     "projects.img4": "Imagen del proyecto 4",
-    "experience.item1": "Experiencia 1",
-    "experience.item2": "Experiencia 2",
-    "experience.item3": "Experiencia 3",
-    "experience.item4": "Experiencia 4",
-    "experience.img1": "Imagen de la experiencia 1",
-    "experience.img2": "Imagen de la experiencia 2",
-    "experience.img3": "Imagen de la experiencia 3",
-    "experience.img4": "Imagen de la experiencia 4",
+    "experience.item1": "Desarrollador full-stack",
+    "experience.img1": "Imagen del puesto de desarrollador full-stack en la Universidad de Almería",
     "cta.viewProjects": "Ver proyectos",
     "cta.viewExperience": "Ver experiencia",
     "cta.viewSkills": "Ver habilidades",
@@ -206,6 +200,28 @@ const TRANSLATIONS = {
     "for.cert.fce.p": "Certificado de inglés de nivel B2 según el Marco Común Europeo de Referencia. Lo uso para lectura de documentación y especificaciones técnicas y para comunicación escrita y oral en entornos profesionales.",
     "for.note": '<strong>Nota:</strong> el detalle técnico de lo que he aprendido en cada titulación está en <a href="habilidades.html">Habilidades</a>, y su aplicación en proyectos reales, en <a href="experiencia.html">Experiencia laboral</a> y <a href="proyectos.html">Proyectos</a>.',
 
+    "exp.title": "Experiencia laboral · José Carlos Ruiz Sánchez",
+    "exp.eyebrow": "Experiencia laboral",
+    "exp.h1": "Experiencia laboral",
+    "exp.lead": "Esta página recoge mi experiencia laboral como una cronología, siguiendo la misma división que mi currículum. De momento incluye un único puesto: desarrollador full-stack en el Applied Computing Group (ACG) de la Universidad de Almería. El detalle técnico de cada puesto se amplía en su propia página.",
+    "exp.timeline.title": "Cronología",
+    "exp.timeline.desc": "Mis puestos ordenados en el tiempo. Usa el buscador para filtrar por empresa, rol o tecnología, y el desplegable para cambiar el orden.",
+    "exp.search.label": "Buscar",
+    "exp.search.placeholder": "Empresa, rol o tecnología",
+    "exp.sort.label": "Ordenar",
+    "exp.sort.newest": "Más recientes primero",
+    "exp.sort.oldest": "Más antiguos primero",
+    "exp.empty": "No hay experiencias que coincidan con la búsqueda.",
+    "exp.item.period": "Febrero 2026 – Agosto 2026",
+    "exp.item.h3": "Desarrollador full-stack",
+    "exp.item.place": "Applied Computing Group (ACG) · Universidad de Almería",
+    "exp.item.p": "Construcción en equipo, backend y frontend, de un mapa interactivo que muestra la actividad de usuarios en el campus de la Universidad de Almería, con datos actualizados cada 2 minutos mediante ingesta automatizada.",
+    "exp.item.b1": "Desarrollo de una API en el backend en Node.js con Express.js.",
+    "exp.item.b2": "Frontend en Next.js: mapa interactivo con visualización de la actividad de usuarios sobre el plano del campus.",
+    "exp.item.b3": "Pipeline de telemetría geoespacial del campus: ingesta de ~3.000 filas cada 2 minutos automatizada con n8n, con almacenamiento y consulta espacial en PostGIS.",
+    "exp.item.b4": "Despliegue en Docker.",
+    "exp.item.cta": "Ver detalle del puesto",
+
     "con.title": "Contacto · José Carlos Ruiz Sánchez",
     "con.eyebrow": "Contacto",
     "con.h1": "Contacto",
@@ -277,14 +293,8 @@ const TRANSLATIONS = {
     "projects.img2": "Project 2 image",
     "projects.img3": "Project 3 image",
     "projects.img4": "Project 4 image",
-    "experience.item1": "Experience 1",
-    "experience.item2": "Experience 2",
-    "experience.item3": "Experience 3",
-    "experience.item4": "Experience 4",
-    "experience.img1": "Experience 1 image",
-    "experience.img2": "Experience 2 image",
-    "experience.img3": "Experience 3 image",
-    "experience.img4": "Experience 4 image",
+    "experience.item1": "Full-stack developer",
+    "experience.img1": "Image of the full-stack developer role at the University of Almería",
     "cta.viewProjects": "View projects",
     "cta.viewExperience": "View experience",
     "cta.viewSkills": "View skills",
@@ -413,6 +423,28 @@ const TRANSLATIONS = {
     "for.cert.fce.p": "English certificate at CEFR level B2. I use it for reading documentation and technical specifications and for written and spoken communication in professional settings.",
     "for.note": '<strong>Note:</strong> the technical detail of what I learned in each degree is on <a href="habilidades.html">Skills</a>, and its application in real projects is on <a href="experiencia.html">Work experience</a> and <a href="proyectos.html">Projects</a>.',
 
+    "exp.title": "Work experience · José Carlos Ruiz Sánchez",
+    "exp.eyebrow": "Work experience",
+    "exp.h1": "Work experience",
+    "exp.lead": "This page gathers my work experience as a timeline, following the same structure as my résumé. For now it includes a single role: full-stack developer at the University of Almería's Applied Computing Group (ACG). The technical detail of each role is expanded on its own page.",
+    "exp.timeline.title": "Timeline",
+    "exp.timeline.desc": "My roles ordered in time. Use the search box to filter by company, role or technology, and the dropdown to change the order.",
+    "exp.search.label": "Search",
+    "exp.search.placeholder": "Company, role or technology",
+    "exp.sort.label": "Sort",
+    "exp.sort.newest": "Newest first",
+    "exp.sort.oldest": "Oldest first",
+    "exp.empty": "No experience matches your search.",
+    "exp.item.period": "February 2026 – August 2026",
+    "exp.item.h3": "Full-stack developer",
+    "exp.item.place": "Applied Computing Group (ACG) · University of Almería",
+    "exp.item.p": "Team build, backend and frontend, of an interactive map showing user activity across the University of Almería campus, with data refreshed every 2 minutes through automated ingestion.",
+    "exp.item.b1": "Development of a backend API in Node.js with Express.js.",
+    "exp.item.b2": "Frontend in Next.js: interactive map visualizing user activity over the campus plan.",
+    "exp.item.b3": "Campus geospatial telemetry pipeline: ingestion of ~3,000 rows every 2 minutes automated with n8n, with storage and spatial querying in PostGIS.",
+    "exp.item.b4": "Deployment on Docker.",
+    "exp.item.cta": "View role detail",
+
     "con.title": "Contact · José Carlos Ruiz Sánchez",
     "con.eyebrow": "Contact",
     "con.h1": "Contact",
@@ -485,6 +517,11 @@ function translatePage(lang) {
   document.querySelectorAll("[data-i18n-alt]").forEach((el) => {
     const value = dict[el.dataset.i18nAlt];
     if (value != null) el.setAttribute("alt", value);
+  });
+
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
+    const value = dict[el.dataset.i18nPlaceholder];
+    if (value != null) el.setAttribute("placeholder", value);
   });
 }
 
