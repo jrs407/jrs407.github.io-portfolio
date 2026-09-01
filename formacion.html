@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-i18n-title="for.title">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Formación Académica · José Carlos Ruiz Sánchez</title>
   <meta name="description" content="Formación de José Carlos Ruiz Sánchez: Grado en Ingeniería Informática por la Universidad de Almería con doble mención en Ingeniería del Software y Sistemas de Información, y Máster en Ingeniería Informática con especialidad en Big Data." />
   <meta name="author" content="José Carlos Ruiz Sánchez" />
-  <meta name="keywords" content="formación académica, Ingeniería Informática, Universidad de Almería, Ingeniería del Software, Sistemas de Información, Máster, Big Data" />
+  <meta name="keywords" content="formación académica, Ingeniería Informática, Universidad de Almería, Ingeniería del Software, Sistemas de Información, Máster, Big Data, TFG, Auscultify" />
   <link rel="canonical" href="https://jrs407.github.io/web-personal/formacion.html" />
 
   <meta property="og:type" content="website" />
@@ -29,41 +29,198 @@
   <link rel="stylesheet" href="assets/css/formacion.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <a class="skip-link" href="#main" data-i18n="skip">Saltar al contenido</a>
 
   <header class="site-header">
     <nav class="nav container">
       <a href="index.html" class="logo">JC</a>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Sobre mí</a></li>
-        <li><a href="proyectos.html">Proyectos</a></li>
-        <li><a href="experiencia.html">Experiencia laboral</a></li>
-        <li><a href="habilidades.html">Habilidades</a></li>
-        <li><a href="formacion.html">Formación Académica</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="index.html" data-i18n="nav.about">Sobre mí</a></li>
+        <li><a href="proyectos.html" data-i18n="nav.projects">Proyectos</a></li>
+        <li><a href="experiencia.html" data-i18n="nav.experience">Experiencia laboral</a></li>
+        <li><a href="habilidades.html" data-i18n="nav.skills">Habilidades</a></li>
+        <li><a href="formacion.html" data-i18n="nav.education">Formación Académica</a></li>
+        <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
       </ul>
 
       <div class="nav-actions">
-        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">🌙</button>
+        <button class="theme-toggle" id="themeToggle" data-i18n-label="themeToggle" aria-label="Cambiar tema">🌙</button>
         <button class="language-toggle" id="languageToggle" aria-label="Cambiar idioma">🇬🇧</button>
       </div>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <button class="nav-toggle" id="navToggle" data-i18n-label="navToggle" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </nav>
   </header>
 
   <main id="main">
-    <section class="section">
+    <section class="edu-hero">
       <div class="container">
-        <h1>Formación Académica</h1>
-        <p class="section-placeholder">
-          Sección en construcción. El contenido de Formación Académica estará
-          disponible en breve. Mientras tanto, el código de cada proyecto está en
-          <a href="https://github.com/jrs407">github.com/jrs407</a> y el detalle
-          técnico en la <a href="habilidades.html">página de Habilidades</a>.
+        <p class="edu-eyebrow" data-i18n="for.eyebrow">Formación</p>
+        <h1 data-i18n="for.h1">Formación Académica</h1>
+        <p class="edu-lead" data-i18n="for.lead">
+          Esta página detalla mi formación reglada siguiendo la misma división
+          que mi currículum: las titulaciones cursadas en la Universidad de
+          Almería, el Trabajo de Fin de Grado y su calificación, y las
+          certificaciones de idiomas. Incluye además una explicación del
+          solapamiento de fechas entre el Grado y el Máster, para que las fechas
+          del CV se entiendan sin ambigüedad.
+        </p>
+        <ul class="edu-toc">
+          <li><a href="#titulaciones" data-i18n="for.toc.degrees">Titulaciones</a></li>
+          <li><a href="#tfg" data-i18n="for.toc.tfg">Trabajo de Fin de Grado</a></li>
+          <li><a href="#solapamiento" data-i18n="for.toc.overlap">Solapamiento Grado y Máster</a></li>
+          <li><a href="#certificaciones" data-i18n="for.toc.certs">Certificaciones</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="titulaciones">
+      <div class="container">
+        <h2 class="section-title reveal-left" data-i18n="for.degrees.title">Titulaciones</h2>
+        <p class="edu-section-desc reveal-left reveal-2" data-i18n="for.degrees.desc">
+          Toda mi formación universitaria se ha cursado en la Universidad de
+          Almería. El Máster arrancó antes de cerrar formalmente el Grado; más
+          abajo explico por qué.
+        </p>
+
+        <ul class="edu-timeline">
+          <li class="edu-item reveal-left">
+            <p class="edu-period" data-i18n="for.master.period">Desde 2025 · en curso</p>
+            <h3 data-i18n="for.master.h3">Máster en Ingeniería Informática</h3>
+            <p class="edu-place" data-i18n="for.master.place">Universidad de Almería</p>
+            <p data-i18n="for.master.p">
+              Especialidad en Big Data (infraestructura y bases de datos a gran
+              escala, análisis de grandes volúmenes de datos y procesamiento
+              distribuido), uno de los tres itinerarios del máster junto a
+              Internet de las cosas y desarrollo web/móvil. Lo compagino con una
+              jornada laboral completa.
+            </p>
+            <ul class="edu-tags">
+              <li data-i18n="for.master.tag1">Especialidad en Big Data</li>
+              <li data-i18n="for.master.tag2">En curso</li>
+            </ul>
+          </li>
+
+          <li class="edu-item reveal-left reveal-2">
+            <p class="edu-period" data-i18n="for.grado.period">2021-2026</p>
+            <h3 data-i18n="for.grado.h3">Grado en Ingeniería Informática</h3>
+            <p class="edu-place" data-i18n="for.grado.place">Universidad de Almería</p>
+            <p data-i18n="for.grado.p">
+              Doble mención en Ingeniería del Software y en Sistemas de
+              Información. Formación en análisis y diseño de software,
+              arquitecturas, bases de datos, modelado de sistemas de información
+              y trabajo en proyectos de equipo.
+            </p>
+            <ul class="edu-tags">
+              <li data-i18n="for.grado.tag1">Mención en Ingeniería del Software</li>
+              <li data-i18n="for.grado.tag2">Mención en Sistemas de Información</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="tfg">
+      <div class="container">
+        <h2 class="section-title reveal-left" data-i18n="for.tfg.title">Trabajo de Fin de Grado</h2>
+        <p class="edu-section-desc reveal-left reveal-2" data-i18n="for.tfg.desc">
+          El Grado se cierra con un Trabajo de Fin de Grado desarrollado en
+          equipo y defendido ante tribunal.
+        </p>
+
+        <div class="edu-card reveal-left">
+          <h3 data-i18n="for.tfg.h3">Auscultify</h3>
+          <p class="edu-grade" data-i18n="for.tfg.grade">Calificación: 9,4 / 10</p>
+          <p data-i18n="for.tfg.p">
+            Proyecto desarrollado en equipo, con reparto explícito de backend y
+            frontend y coordinación por Git. Incluyó modelado de datos,
+            microservicios y un algoritmo de recomendación, además de la
+            redacción de la memoria técnica y la defensa oral.
+          </p>
+          <p data-i18n="for.tfg.p2">
+            No pude defenderlo en la convocatoria ordinaria, así que lo defendí
+            en la convocatoria de febrero de 2026. Por eso el Grado figura como
+            finalizado en 2026, aunque el resto de asignaturas estaban superadas
+            antes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="solapamiento">
+      <div class="container">
+        <h2 class="section-title reveal-left" data-i18n="for.overlap.title">Solapamiento entre Grado y Máster</h2>
+        <p class="edu-section-desc reveal-left reveal-2" data-i18n="for.overlap.desc">
+          Aclaración sobre las fechas del currículum: entre el final del Grado y
+          el inicio del Máster hay unos meses de solapamiento. Este es el motivo.
+        </p>
+
+        <ul class="edu-list">
+          <li class="reveal-left">
+            <h3 data-i18n="for.overlap.i1.h3">Matrícula del Máster con el TFG pendiente</h3>
+            <p data-i18n="for.overlap.i1.p">
+              Empecé el Máster en Ingeniería Informática teniendo pendientes
+              únicamente los créditos del Trabajo de Fin de Grado. Me matriculé
+              con el resto del expediente del Grado ya superado para no perder un
+              curso completo.
+            </p>
+          </li>
+          <li class="reveal-left">
+            <h3 data-i18n="for.overlap.i2.h3">Defensa del TFG en febrero</h3>
+            <p data-i18n="for.overlap.i2.p">
+              El Trabajo de Fin de Grado no pude defenderlo en la convocatoria
+              ordinaria; lo defendí en la convocatoria de febrero de 2026. Hasta
+              esa fecha el Grado constaba como no finalizado pese a tener el
+              resto del expediente aprobado.
+            </p>
+          </li>
+          <li class="reveal-left">
+            <h3 data-i18n="for.overlap.i3.h3">Cómo se refleja en el CV</h3>
+            <p data-i18n="for.overlap.i3.p">
+              De ahí que el currículum muestre el Grado terminando en 2026 y el
+              Máster empezando unos meses antes: no son dos periodos
+              independientes, sino esa transición. El Máster sigue en curso.
+            </p>
+          </li>
+        </ul>
+
+        <p class="edu-note reveal-left reveal-3" data-i18n-html="for.overlap.note">
+          <strong>Para quien evalúa el perfil:</strong> el solapamiento de
+          fechas entre el Grado y el Máster no es un error del currículum. Se
+          debe a haber cursado el último tramo del Grado (la defensa del TFG, en
+          febrero de 2026) cuando ya estaba matriculado en el Máster.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="certificaciones">
+      <div class="container">
+        <h2 class="section-title reveal-left" data-i18n="for.certs.title">Certificaciones e idiomas</h2>
+        <p class="edu-section-desc reveal-left reveal-2" data-i18n="for.certs.desc">
+          Certificaciones oficiales de idiomas. El detalle de mi nivel de
+          comunicación en entornos técnicos está en la página de Habilidades.
+        </p>
+
+        <div class="edu-card reveal-left">
+          <h3 data-i18n="for.cert.fce.h3">Cambridge English: First (FCE)</h3>
+          <p class="edu-grade" data-i18n="for.cert.fce.grade">Nivel B2 (MCER)</p>
+          <p data-i18n="for.cert.fce.p">
+            Certificado de inglés de nivel B2 según el Marco Común Europeo de
+            Referencia. Lo uso para lectura de documentación y especificaciones
+            técnicas y para comunicación escrita y oral en entornos
+            profesionales.
+          </p>
+        </div>
+
+        <p class="edu-note reveal-left reveal-3" data-i18n-html="for.note">
+          <strong>Nota:</strong> el detalle técnico de lo que he aprendido en
+          cada titulación está en <a href="habilidades.html">Habilidades</a>, y
+          su aplicación en proyectos reales, en
+          <a href="experiencia.html">Experiencia laboral</a> y
+          <a href="proyectos.html">Proyectos</a>.
         </p>
       </div>
     </section>
@@ -72,8 +229,8 @@
   <footer class="site-footer">
     <div class="container">
       <ul class="footer-contact">
-        <li>Email: <a href="mailto:josecarlosruizsan@gmail.com">josecarlosruizsan@gmail.com</a></li>
-        <li>Teléfono: <a href="tel:+34608257574">+34 608257574</a></li>
+        <li data-i18n-html="footer.email">Email: <a href="mailto:josecarlosruizsan@gmail.com">josecarlosruizsan@gmail.com</a></li>
+        <li data-i18n-html="footer.phone">Teléfono: <a href="tel:+34608257574">+34 608257574</a></li>
         <li>GitHub: <a href="https://github.com/jrs407">github.com/jrs407</a></li>
         <li>LinkedIn: <a href="https://www.linkedin.com/in/jose-carlos-ruiz-sanchez/">linkedin.com/in/jose-carlos-ruiz-sanchez</a></li>
       </ul>
