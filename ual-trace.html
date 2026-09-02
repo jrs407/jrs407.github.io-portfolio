@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-i18n-title="uat.title">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UAL · Mapa de actividad del campus · José Carlos Ruiz Sánchez</title>
-  <meta name="description" content="Detalle del proyecto desarrollado en el Applied Computing Group (ACG) de la Universidad de Almería: mapa interactivo de actividad del campus con API en Node.js/Express.js, frontend en Next.js e ingesta geoespacial con n8n y PostGIS sobre Docker. Página en construcción." />
+  <title>Desarrollador full-stack en el Applied Computing Group · José Carlos Ruiz Sánchez</title>
+  <meta name="description" content="Detalle de mis prácticas como desarrollador full-stack en el Applied Computing Group (ACG) de la Universidad de Almería: una aplicación web que mostraba sobre un mapa del campus la concentración de dispositivos conectados a la red wifi, casi en tiempo real, con capas de visualización y un módulo de informes." />
   <meta name="author" content="José Carlos Ruiz Sánchez" />
-  <meta name="keywords" content="Applied Computing Group, ACG, Universidad de Almería, mapa interactivo, Node.js, Express.js, Next.js, React, n8n, PostGIS, Docker" />
   <link rel="canonical" href="https://jrs407.github.io/web-personal/ual-trace.html" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="UAL · Mapa de actividad del campus · José Carlos Ruiz Sánchez" />
-  <meta property="og:description" content="Detalle del proyecto del Applied Computing Group (ACG) de la Universidad de Almería. Página en construcción." />
+  <meta property="og:title" content="Desarrollador full-stack en el Applied Computing Group · José Carlos Ruiz Sánchez" />
+  <meta property="og:description" content="Desarrollador full-stack en el Applied Computing Group (ACG) de la Universidad de Almería: app web que mostraba sobre un mapa del campus la concentración de dispositivos conectados a la red wifi, casi en tiempo real." />
   <meta property="og:url" content="https://jrs407.github.io/web-personal/ual-trace.html" />
   <meta property="og:image" content="https://jrs407.github.io/web-personal/assets/img/Foto.jpg" />
   <meta property="og:locale" content="es_ES" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="UAL · Mapa de actividad del campus · José Carlos Ruiz Sánchez" />
-  <meta name="twitter:description" content="Detalle del proyecto del Applied Computing Group (ACG) de la Universidad de Almería. Página en construcción." />
+  <meta name="twitter:title" content="Desarrollador full-stack en el Applied Computing Group · José Carlos Ruiz Sánchez" />
+  <meta name="twitter:description" content="Desarrollador full-stack en el Applied Computing Group (ACG) de la Universidad de Almería: app web que mostraba sobre un mapa del campus la concentración de dispositivos conectados a la red wifi, casi en tiempo real." />
   <meta name="twitter:image" content="https://jrs407.github.io/web-personal/assets/img/Foto.jpg" />
 
   <link rel="icon" href="data:," />
@@ -29,49 +28,366 @@
   <link rel="stylesheet" href="assets/css/experiencia.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <a class="skip-link" href="#main" data-i18n="skip">Saltar al contenido</a>
 
   <header class="site-header">
     <nav class="nav container">
       <a href="index.html" class="logo">JC</a>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Sobre mí</a></li>
-        <li><a href="proyectos.html">Proyectos</a></li>
-        <li><a href="experiencia.html">Experiencia laboral</a></li>
-        <li><a href="habilidades.html">Habilidades</a></li>
-        <li><a href="formacion.html">Formación Académica</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="index.html" data-i18n="nav.about">Sobre mí</a></li>
+        <li><a href="proyectos.html" data-i18n="nav.projects">Proyectos</a></li>
+        <li><a href="experiencia.html" data-i18n="nav.experience">Experiencia laboral</a></li>
+        <li><a href="habilidades.html" data-i18n="nav.skills">Habilidades</a></li>
+        <li><a href="formacion.html" data-i18n="nav.education">Formación Académica</a></li>
+        <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
       </ul>
 
       <div class="nav-actions">
-        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">🌙</button>
+        <button class="theme-toggle" id="themeToggle" data-i18n-label="themeToggle" aria-label="Cambiar tema">🌙</button>
         <button class="language-toggle" id="languageToggle" aria-label="Cambiar idioma">🇬🇧</button>
       </div>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <button class="nav-toggle" id="navToggle" data-i18n-label="navToggle" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </nav>
   </header>
 
   <main id="main">
-    <section class="section">
+    <section class="exp-hero">
       <div class="container">
-        <div class="exp-construction">
-          <h1>Mapa de actividad del campus · Universidad de Almería</h1>
-          <p class="section-placeholder">
-            Página en construcción. El detalle de este proyecto del Applied
-            Computing Group (ACG) estará disponible en breve. Mientras tanto, el
-            resumen por capas está en la
-            <a href="experiencia.html">página de Experiencia laboral</a> y el
-            detalle de cada tecnología, en <a href="habilidades.html">Habilidades</a>.
+        <p class="exp-eyebrow" data-i18n="uat.eyebrow">Experiencia laboral · Detalle del puesto</p>
+        <h1 data-i18n="uat.h1">Desarrollador full-stack en el Applied Computing Group (ACG)</h1>
+        <p class="exp-lead" data-i18n="uat.lead">
+          Prácticas de desarrollo full-stack en el Applied Computing Group de
+          la Universidad de Almería. El proyecto era una aplicación web que
+          mostraba sobre un mapa del campus la concentración de dispositivos
+          conectados a los puntos de acceso wifi, actualizada casi en tiempo
+          real. Sobre esa base se construyeron varias capas de visualización y
+          un módulo de informes y análisis de datos.
+        </p>
+        <ul class="exp-tags exp-hero-tags">
+          <li>Next.js</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>n8n</li>
+          <li>PostGIS</li>
+          <li>Docker</li>
+          <li>nginx</li>
+        </ul>
+        <ul class="exp-detail-toc">
+          <li><a href="#contexto" data-i18n="uat.toc.context">Contexto</a></li>
+          <li><a href="#descripcion" data-i18n="uat.toc.description">Descripción del trabajo</a></li>
+          <li><a href="#aportacion" data-i18n="uat.toc.contribution">Mi aportación</a></li>
+          <li><a href="#arquitectura" data-i18n="uat.toc.architecture">Arquitectura y stack</a></li>
+          <li><a href="#balance" data-i18n="uat.toc.balance">Balance</a></li>
+        </ul>
+
+        <figure class="exp-hero-media">
+          <img src="assets/img/Experiencia/ual-trace.png" data-i18n-alt="uat.hero.imgAlt" alt="Imagen del proyecto desarrollado en el Applied Computing Group (ACG)" draggable="false" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contexto">
+      <div class="container">
+        <h2 class="section-title reveal-left" data-i18n="uat.context.title">Contexto del puesto</h2>
+
+        <dl class="exp-detail-meta reveal-left">
+          <dt data-i18n="uat.context.org.dt">Organización</dt>
+          <dd data-i18n="uat.context.org.dd">Applied Computing Group (ACG) · Universidad de Almería</dd>
+
+          <dt data-i18n="uat.context.role.dt">Rol</dt>
+          <dd data-i18n="uat.context.role.dd">Desarrollador full-stack (sin denominación formal)</dd>
+
+          <dt data-i18n="uat.context.period.dt">Periodo</dt>
+          <dd data-i18n="uat.context.period.dd">Febrero – Agosto de 2026 (unos 6 meses)</dd>
+
+          <dt data-i18n="uat.context.hours.dt">Dedicación</dt>
+          <dd data-i18n="uat.context.hours.dd">5 horas diarias, de lunes a viernes (25 h/semana)</dd>
+
+          <dt data-i18n="uat.context.mode.dt">Modalidad</dt>
+          <dd data-i18n="uat.context.mode.dd">Presencial hasta comienzos de junio y en remoto el resto del periodo; algo más de la primera mitad del tiempo fue presencial</dd>
+
+          <dt data-i18n="uat.context.link.dt">Tipo de vínculo</dt>
+          <dd data-i18n="uat.context.link.dd">Prácticas de empresa extracurriculares, fuera del horario lectivo, formalizadas a través de la Universidad de Almería</dd>
+        </dl>
+
+        <div class="exp-detail-card reveal-left reveal-2">
+          <h3 data-i18n="uat.context.origin.h3">Cómo surgió</h3>
+          <p data-i18n="uat.context.origin.p">
+            Surgió de una conversación informal con un profesor del propio
+            grupo (ACG): al terminar una clase me planteó la idea de sacar
+            adelante un proyecto. Me interesó la propuesta, la fuimos
+            concretando y terminó formalizándose como prácticas de empresa
+            extracurriculares.
           </p>
-          <div class="exp-construction-media">
-            <img src="assets/img/Experiencia/ual-trace.png" alt="Imagen del proyecto desarrollado en el Applied Computing Group (ACG)" draggable="false" />
-          </div>
-          <a class="exp-back-link" href="experiencia.html">&#8249; Volver a Experiencia laboral</a>
         </div>
+      </div>
+    </section>
+
+    <section class="section" id="descripcion">
+      <div class="container">
+        <h2 class="section-title reveal-left" data-i18n="uat.desc.title">Descripción del trabajo</h2>
+
+        <div class="exp-detail-card reveal-left">
+          <h3 data-i18n="uat.desc.idea.h3">La idea de partida</h3>
+          <p data-i18n="uat.desc.idea.p">
+            El objetivo era una aplicación web que mostrara sobre un mapa del
+            campus la posición de los dispositivos conectados a los puntos de
+            acceso wifi de la universidad. Sobre el mapa se pintaba una malla
+            de hexágonos coloreada según la concentración de dispositivos: rojo
+            donde había más aglomeración y amarillo donde había menos. Los
+            datos se refrescaban casi en tiempo real, con una latencia de unos
+            2 minutos, que era el ritmo de actualización de la fuente.
+          </p>
+        </div>
+
+        <div class="exp-detail-card reveal-left reveal-2">
+          <h3 data-i18n="uat.desc.purpose.h3">Para qué servía</h3>
+          <p data-i18n="uat.desc.purpose.p">
+            Esa información abría bastantes posibilidades de análisis: saber qué
+            edificios concentraban más gente en cada momento, cuántos
+            dispositivos había conectados a cada punto de acceso o intentar
+            inferir patrones de comportamiento a partir de cómo se movía la
+            gente por el campus.
+          </p>
+        </div>
+
+        <div class="exp-detail-card reveal-left reveal-3">
+          <h3 data-i18n="uat.desc.built.h3">Qué se construyó</h3>
+          <p data-i18n="uat.desc.built.p1">
+            Partiendo de la aplicación original con la malla de hexágonos, se
+            fueron añadiendo distintas capas de visualización sobre el mismo
+            mapa:
+          </p>
+          <ul>
+            <li data-i18n="uat.desc.built.li1">Un mapa de calor continuo como alternativa a los hexágonos.</li>
+            <li data-i18n="uat.desc.built.li2">
+              Una capa que oscurecía los edificios cuanto mayor era su
+              ocupación.
+            </li>
+            <li data-i18n="uat.desc.built.li3">
+              Una capa de rutas entre edificios, que dibujaba el flujo de
+              personas de un edificio a otro cuando se detectaba un
+              desplazamiento significativo en un intervalo de 2 minutos (por
+              ejemplo, unas 100 personas moviéndose entre dos edificios).
+            </li>
+            <li data-i18n="uat.desc.built.li4">
+              Un detalle por edificio: al entrar en uno concreto se veían sus
+              plantas, cuánta gente había en cada una y en qué zona.
+            </li>
+            <li data-i18n-html="uat.desc.built.li5">
+              Un modo histórico: se elegía fecha y hora y se veía ese instante
+              exacto, con un botón de <em>play</em> que reproducía la evolución
+              en el tiempo. Funcionaba con todas las capas.
+            </li>
+          </ul>
+          <p data-i18n="uat.desc.built.p2">
+            Además se desarrolló un módulo de informes, con un apartado de
+            gráficas y datos de interés e inferencia a partir de la información
+            que ya se estaba recogiendo.
+          </p>
+          <p data-i18n="uat.desc.built.p3">
+            Por debajo, la ingesta de datos se automatizó con n8n y la base de
+            datos (PostGIS) se diseñó específicamente para este caso de uso.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="aportacion">
+      <div class="container">
+        <h2 class="section-title reveal-left" data-i18n="uat.contrib.title">Mi aportación</h2>
+        <p class="reveal-left" data-i18n="uat.contrib.lead">
+          Partí de un frontend heredado y, en coordinación con mi responsable,
+          sacamos adelante el resto del proyecto: la evolución de ese frontend,
+          la base de datos, el backend, la automatización de la ingesta y la
+          integración de todas las piezas. Yo llevé el grueso del desarrollo y
+          las decisiones de fondo las tomábamos y revisábamos juntos.
+        </p>
+
+        <div class="exp-detail-card reveal-left">
+          <h3 data-i18n="uat.contrib.frontend.h3">Frontend</h3>
+          <p data-i18n="uat.contrib.frontend.p">
+            Heredé un frontend en Next.js de un desarrollador anterior. Lo
+            refactoricé y optimicé, terminé las partes que estaban a medias y
+            seguí desarrollándolo: nuevas vistas, aportaciones de diseño y la
+            interfaz de las distintas capas de visualización.
+          </p>
+        </div>
+
+        <div class="exp-detail-card reveal-left reveal-2">
+          <h3 data-i18n="uat.contrib.decisions.h3">Decisiones técnicas</h3>
+          <ul>
+            <li data-i18n-html="uat.contrib.decisions.li1">
+              <strong>Base de datos.</strong> De acuerdo con mi responsable,
+              optamos por una base de datos geoespacial (PostGIS), coherente
+              con la naturaleza del problema (edificios, posiciones y puntos de
+              acceso). Diseñé el modelo: tablas y campos.
+            </li>
+            <li data-i18n-html="uat.contrib.decisions.li2">
+              <strong>Backend.</strong> Propuse Node.js con Express.js y lo
+              acordamos como la mejor opción para este proyecto. Diseñé la API
+              —endpoints, funciones y las pruebas con Jest— revisándola con mi
+              responsable.
+            </li>
+            <li data-i18n-html="uat.contrib.decisions.li3">
+              <strong>Ingesta de datos.</strong> Diseñé la automatización en
+              n8n, acordando el enfoque con mi responsable. Partíamos de una URL
+              que devolvía los datos en bruto; en n8n se procesaban y se
+              cifraban para preservar el anonimato antes de almacenarlos. Se
+              eligió n8n en parte porque ya tenía experiencia con la
+              herramienta.
+            </li>
+            <li data-i18n-html="uat.contrib.decisions.li4">
+              <strong>Despliegue.</strong> Empaqueté la aplicación con Docker; la
+              puesta en producción tras un proxy inverso nginx la sacamos
+              adelante entre mi responsable y yo.
+            </li>
+          </ul>
+        </div>
+
+        <div class="exp-detail-card reveal-left reveal-3">
+          <h3 data-i18n="uat.contrib.ongoing.h3">Trabajo continuado</h3>
+          <p data-i18n="uat.contrib.ongoing.p">
+            A medida que crecía la aplicación fui adaptando todas las capas:
+            nuevas funcionalidades en el frontend, refactor del backend y
+            actualizaciones de la base de datos para darles soporte. También
+            llevé la integración entre backend y frontend, y los problemas que
+            iban surgiendo los resolvíamos entre mi responsable y yo, con
+            reuniones frecuentes para ir ajustando el rumbo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="arquitectura">
+      <div class="container">
+        <h2 class="section-title reveal-left" data-i18n="uat.arch.title">Arquitectura y stack</h2>
+
+        <div class="exp-detail-tech reveal-left">
+          <div>
+            <h3 data-i18n="uat.arch.frontend.h3">Frontend</h3>
+            <ul class="exp-tags">
+              <li>Next.js</li>
+              <li>React</li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-i18n="uat.arch.backend.h3">Backend</h3>
+            <ul class="exp-tags">
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>Jest</li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-i18n="uat.arch.data.h3">Datos e infraestructura</h3>
+            <ul class="exp-tags">
+              <li>PostGIS</li>
+              <li>n8n</li>
+              <li>Docker</li>
+              <li>nginx</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-detail-card reveal-left">
+          <ul>
+            <li data-i18n-html="uat.arch.li1">
+              <strong>Fuente de datos.</strong> Una URL externa que devolvía,
+              en bruto y cada ~2 minutos, unas 3.000 filas con los dispositivos
+              conectados a los puntos de acceso wifi.
+            </li>
+            <li data-i18n-html="uat.arch.li2">
+              <strong>Ingesta (n8n).</strong> Un flujo automatizado que recogía
+              esos datos, los procesaba y los cifraba para preservar el anonimato
+              antes de almacenarlos.
+            </li>
+            <li data-i18n-html="uat.arch.li3">
+              <strong>Base de datos geoespacial (PostGIS).</strong> Modelaba
+              edificios, posiciones y puntos de acceso; diseñada a medida para
+              este caso de uso.
+            </li>
+            <li data-i18n-html="uat.arch.li4">
+              <strong>Backend (Node.js + Express.js).</strong> API REST con los
+              endpoints y las funciones que consultaban y transformaban los datos
+              para cada capa; pruebas con Jest.
+            </li>
+            <li data-i18n-html="uat.arch.li5">
+              <strong>Frontend (Next.js).</strong> El mapa del campus con las
+              capas de visualización (hexágonos, mapa de calor, ocupación por
+              edificio, rutas, detalle por planta y modo histórico) y el módulo
+              de informes.
+            </li>
+            <li data-i18n-html="uat.arch.li6">
+              <strong>Despliegue.</strong> La aplicación se empaquetaba con Docker
+              y se servía tras un proxy inverso nginx.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="balance">
+      <div class="container">
+        <h2 class="section-title reveal-left" data-i18n="uat.balance.title">Balance</h2>
+        <p class="reveal-left" data-i18n="uat.balance.lead">
+          Es el proyecto en el que más responsabilidad he tenido: partiendo del
+          frontend inicial, saqué adelante el resto en coordinación constante
+          con mi responsable, con quien discutía y validaba las decisiones
+          técnicas de fondo.
+        </p>
+
+        <div class="exp-detail-card reveal-left">
+          <h3 data-i18n="uat.balance.gains.h3">Qué me llevo</h3>
+          <ul>
+            <li data-i18n="uat.balance.gains.li1">
+              Haber participado en un proyecto real casi de punta a punta,
+              llevando el grueso del desarrollo: diseño de la base de datos,
+              backend, automatización de la ingesta, evolución del frontend,
+              despliegue con Docker e integración de todas las piezas.
+            </li>
+            <li data-i18n="uat.balance.gains.li2">
+              Tomar decisiones técnicas y saber justificarlas, discutiéndolas
+              con mi responsable: una base de datos geoespacial acorde con el
+              dominio (edificios, posiciones y puntos de acceso), Node.js con
+              Express.js para el backend y n8n para la ingesta, cada una
+              razonada por el problema concreto.
+            </li>
+            <li data-i18n="uat.balance.gains.li3">
+              Trabajar sobre un producto que cambiaba: el alcance no estaba
+              cerrado, así que me acostumbré a refactorizar backend y base de
+              datos a medida que crecían las funcionalidades y a resolver,
+              junto a mi responsable, los problemas de integración entre
+              frontend y backend.
+            </li>
+            <li data-i18n="uat.balance.gains.li4">
+              Ver toda la cadena de datos, desde una fuente externa hasta la
+              visualización en el mapa, pasando por el tratamiento y el cifrado
+              para preservar el anonimato.
+            </li>
+          </ul>
+        </div>
+
+        <div class="exp-detail-card reveal-left reveal-2">
+          <h3 data-i18n="uat.balance.different.h3">Qué haría distinto</h3>
+          <ul>
+            <li data-i18n="uat.balance.different.li1">
+              Dedicar más tiempo al diseño inicial del modelo de datos y de la
+              API: buena parte de los refactores posteriores vino de que el
+              alcance se fue concretando sobre la marcha.
+            </li>
+            <li data-i18n="uat.balance.different.li2">
+              Fijar antes un contrato estable de endpoints para reducir el
+              retrabajo en la integración.
+            </li>
+          </ul>
+        </div>
+
+        <a class="exp-back-link reveal-left" href="experiencia.html" data-i18n="uat.balance.back">&#8249; Volver a Experiencia laboral</a>
       </div>
     </section>
   </main>
@@ -79,8 +395,8 @@
   <footer class="site-footer">
     <div class="container">
       <ul class="footer-contact">
-        <li>Email: <a href="mailto:josecarlosruizsan@gmail.com">josecarlosruizsan@gmail.com</a></li>
-        <li>Teléfono: <a href="tel:+34608257574">+34 608257574</a></li>
+        <li data-i18n-html="footer.email">Email: <a href="mailto:josecarlosruizsan@gmail.com">josecarlosruizsan@gmail.com</a></li>
+        <li data-i18n-html="footer.phone">Teléfono: <a href="tel:+34608257574">+34 608257574</a></li>
         <li>GitHub: <a href="https://github.com/jrs407">github.com/jrs407</a></li>
         <li>LinkedIn: <a href="https://www.linkedin.com/in/jose-carlos-ruiz-sanchez/">linkedin.com/in/jose-carlos-ruiz-sanchez</a></li>
       </ul>
