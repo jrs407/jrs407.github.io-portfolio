@@ -1,1 +1,4 @@
-/* Estilos de la página "Proyectos" */
+/* Estilos de la página "Proyectos".
+   La estructura (hero, cronología, línea de tiempo, buscador y orden) reutiliza
+   las clases .exp-* definidas en experiencia.css para que sea idéntica a la
+   página de Experiencia laboral. */

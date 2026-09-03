@@ -6,7 +6,7 @@
   <title>Habilidades · José Carlos Ruiz Sánchez</title>
   <meta name="description" content="Habilidades de José Carlos Ruiz Sánchez organizadas como en su CV: técnicas (lenguajes, frameworks, bases de datos, DevOps, testing), académicas, transversales e idiomas, con el contexto real de uso de cada una." />
   <meta name="author" content="José Carlos Ruiz Sánchez" />
-  <meta name="keywords" content="habilidades, JavaScript, TypeScript, Node.js, Express.js, React, Angular, Next.js, Python, Java, Spring, Spark, PostgreSQL, PostGIS, MySQL, MongoDB, Docker, n8n, Git, Big Data" />
+  <meta name="keywords" content="habilidades, JavaScript, TypeScript, Node.js, Express.js, React, React Router, Vite, Angular, Next.js, Python, Java, Spring, Spark, PostgreSQL, PostGIS, MySQL, MongoDB, Docker, API Gateway, Nginx, JWT, Vitest, n8n, Git, Big Data" />
   <link rel="canonical" href="https://jrs407.github.io/web-personal/habilidades.html" />
 
   <meta property="og:type" content="website" />
@@ -83,8 +83,9 @@
         <p class="skills-section-desc reveal-left reveal-2" data-i18n="hab.tech.desc">
           Herramientas y lenguajes con los que trabajo de forma habitual.
           Mantengo la agrupación de mi CV (lenguajes, frameworks, bases de datos,
-          automatización, DevOps, control de versiones y testing) y añado en cada
-          tarjeta el contexto en el que los he aplicado. Para quien evalúa el
+          automatización, DevOps, control de versiones, testing y seguridad web)
+          y añado en cada tarjeta el contexto en el que los he aplicado. Para
+          quien evalúa el
           perfil: cada bloque describe mi nivel real de autonomía, no una simple
           lista de palabras clave.
         </p>
@@ -128,14 +129,21 @@
             </div>
             <p data-i18n="hab.card.fw.p">
               Construyo APIs REST con Node.js y Express.js, e interfaces con React
-              y Next.js (renderizado en servidor y rutas dinámicas). Spark lo
-              utilizo para procesamiento distribuido sobre varios nodos.
+              y Next.js (renderizado en servidor y rutas dinámicas). En proyectos
+              con React empaqueto con Vite, gestiono la navegación con React
+              Router y aíslo estilos con CSS Modules; cuando hace falta dibujo e
+              interacción gráfica recurro a la HTML5 Canvas API sin librerías.
+              Spark lo utilizo para procesamiento distribuido sobre varios nodos.
             </p>
             <ul class="skill-tags">
               <li>Node.js</li>
               <li>Express.js</li>
               <li>React</li>
               <li>Next.js</li>
+              <li>Vite</li>
+              <li>React Router</li>
+              <li>CSS Modules</li>
+              <li>HTML5 Canvas</li>
               <li>Spark</li>
             </ul>
             <p class="skill-applied" data-i18n-html="hab.card.fw.applied">
@@ -143,7 +151,8 @@
               Frontend del mapa interactivo del campus en Next.js y React, API en
               Node.js + Express.js durante las prácticas, y despliegue de un
               modelo sobre un clúster de nodos con Spark en el Predictor de
-              burnout.
+              burnout. En Tokimori, frontend en React 19 con Vite y React Router y
+              un editor visual por elemento construido con la HTML5 Canvas API.
             </p>
           </article>
 
@@ -205,12 +214,15 @@
               orquesto varios servicios en local con docker-compose y preparo
               entornos idénticos en desarrollo y despliegue para eliminar el
               «en mi máquina funciona». Sirvo las aplicaciones detrás de Nginx
-              como servidor web y proxy inverso.
+              como servidor web, proxy inverso y API Gateway, dejando un único
+              punto de entrada público y los servicios internos aislados en la
+              red de contenedores.
             </p>
             <ul class="skill-tags">
               <li>Docker</li>
               <li>docker-compose</li>
               <li>Nginx</li>
+              <li>API Gateway</li>
               <li data-i18n="hab.tag.reproducibleEnvs">Entornos reproducibles</li>
             </ul>
             <p class="skill-applied" data-i18n-html="hab.card.devops.applied">
@@ -218,7 +230,9 @@
               Despliegue en Docker de la aplicación desarrollada en las prácticas
               y publicación con Nginx de la página de las prácticas de empresa
               extracurriculares; este mismo portfolio incluye Dockerfile y
-              docker-compose.
+              docker-compose. En Tokimori, docker-compose orquesta seis
+              microservicios tras un API Gateway con Nginx, con configuración de
+              producción y un override para desarrollo.
             </p>
           </article>
 
@@ -253,23 +267,51 @@
               <img src="assets/img/Habilidades/Portada/testing-library.svg" alt="" draggable="false" />
             </div>
             <p data-i18n="hab.card.test.p">
-              Escribo tests automáticos en JavaScript con Jest, tanto para APIs de
-              Node.js (casos unitarios y pruebas de integración sobre los
-              endpoints) como para interfaces de React con React Testing Library
-              (render de componentes e interacción del usuario). El objetivo es
-              que un fallo se detecte en cuanto se introduce y no en cliente.
+              Escribo tests automáticos en JavaScript con Jest y Vitest, tanto
+              para APIs de Node.js (casos unitarios y pruebas de integración sobre
+              los endpoints con Supertest) como para interfaces de React con
+              Testing Library (render de componentes e interacción del usuario).
+              El objetivo es que un fallo se detecte en cuanto se introduce y no
+              en cliente.
             </p>
             <ul class="skill-tags">
               <li>Jest</li>
+              <li>Vitest</li>
               <li>React Testing Library</li>
+              <li>Supertest</li>
               <li data-i18n="hab.tag.unitTests">Tests unitarios</li>
               <li data-i18n="hab.tag.integrationTests">Tests de integración</li>
             </ul>
             <p class="skill-applied" data-i18n-html="hab.card.test.applied">
               <span>Dónde lo he aplicado</span>
               Pruebas de la API en Node.js y de la interfaz en React durante las
-              prácticas (entorno profesional), y tests de la lógica de Tokimori
-              como proyecto personal.
+              prácticas (entorno profesional), y en Tokimori, Vitest con Testing
+              Library en el frontend y Jest con Supertest en el backend.
+            </p>
+          </article>
+
+          <article class="skill-card reveal-left reveal-3">
+            <h3 data-i18n="hab.card.sec.h3">Autenticación y seguridad web</h3>
+            <p data-i18n="hab.card.sec.p">
+              Implemento autenticación basada en JWT sobre cookies seguras, con
+              hashing de contraseñas mediante bcrypt, y endurezco las APIs con
+              helmet, rate limiting y una política de CORS configurable. El
+              objetivo es que los servicios internos no queden expuestos y que
+              las credenciales nunca viajen ni se almacenen en claro.
+            </p>
+            <ul class="skill-tags">
+              <li>JWT</li>
+              <li>bcrypt</li>
+              <li>helmet</li>
+              <li data-i18n="hab.tag.rateLimiting">Rate limiting</li>
+              <li>CORS</li>
+            </ul>
+            <p class="skill-applied" data-i18n-html="hab.card.sec.applied">
+              <span>Dónde lo he aplicado</span>
+              Tokimori: inicio de sesión con tokens JWT de 7 días sobre cookies
+              secure, hashing con bcrypt y endurecimiento de los seis
+              microservicios con helmet, rate limiting y CORS; solo el API
+              Gateway queda accesible desde fuera de la red Docker.
             </p>
           </article>
 

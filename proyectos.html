@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-i18n-title="proy.title">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Proyectos · José Carlos Ruiz Sánchez</title>
-  <meta name="description" content="Proyectos de José Carlos Ruiz Sánchez: Tokimori (gestión de tareas con arquitectura de microservicios), un predictor de burnout con IA sobre Spark y Auscultify, Trabajo de Fin de Grado calificado con 9,4/10." />
+  <meta name="description" content="Proyectos de José Carlos Ruiz Sánchez: Tokimori (aplicación web full-stack con arquitectura de microservicios), un predictor de burnout con IA sobre Spark y Auscultify, Trabajo de Fin de Grado calificado con 9,4/10." />
   <meta name="author" content="José Carlos Ruiz Sánchez" />
   <meta name="keywords" content="proyectos, Tokimori, Auscultify, predictor de burnout, React, Node.js, Python, Spark, microservicios, Trabajo de Fin de Grado" />
   <link rel="canonical" href="https://jrs407.github.io/web-personal/proyectos.html" />
@@ -26,44 +26,182 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/experiencia.css" />
   <link rel="stylesheet" href="assets/css/proyectos.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <a class="skip-link" href="#main" data-i18n="skip">Saltar al contenido</a>
 
   <header class="site-header">
     <nav class="nav container">
       <a href="index.html" class="logo">JC</a>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Sobre mí</a></li>
-        <li><a href="proyectos.html">Proyectos</a></li>
-        <li><a href="experiencia.html">Experiencia laboral</a></li>
-        <li><a href="habilidades.html">Habilidades</a></li>
-        <li><a href="formacion.html">Formación Académica</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="index.html" data-i18n="nav.about">Sobre mí</a></li>
+        <li><a href="proyectos.html" data-i18n="nav.projects">Proyectos</a></li>
+        <li><a href="experiencia.html" data-i18n="nav.experience">Experiencia laboral</a></li>
+        <li><a href="habilidades.html" data-i18n="nav.skills">Habilidades</a></li>
+        <li><a href="formacion.html" data-i18n="nav.education">Formación Académica</a></li>
+        <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
       </ul>
 
       <div class="nav-actions">
-        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">🌙</button>
+        <button class="theme-toggle" id="themeToggle" data-i18n-label="themeToggle" aria-label="Cambiar tema">🌙</button>
         <button class="language-toggle" id="languageToggle" aria-label="Cambiar idioma">🇬🇧</button>
       </div>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <button class="nav-toggle" id="navToggle" data-i18n-label="navToggle" aria-label="Abrir menú" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </nav>
   </header>
 
   <main id="main">
-    <section class="section">
+    <section class="exp-hero">
       <div class="container">
-        <h1>Proyectos</h1>
-        <p class="section-placeholder">
-          Sección en construcción. El contenido de Proyectos estará disponible en
-          breve. Mientras tanto, el código de cada proyecto está en
-          <a href="https://github.com/jrs407">github.com/jrs407</a> y el detalle
-          técnico en la <a href="habilidades.html">página de Habilidades</a>.
+        <p class="exp-eyebrow" data-i18n="proy.eyebrow">Proyectos</p>
+        <h1 data-i18n="proy.h1">Proyectos</h1>
+        <p class="exp-lead" data-i18n="proy.lead">
+          Esta página recoge mis proyectos como una cronología, siguiendo la
+          misma división que mi currículum. Son proyectos que desarrollo por
+          iniciativa personal.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="cronologia">
+      <div class="container">
+        <h2 class="section-title reveal-left" data-i18n="proy.timeline.title">Cronología</h2>
+        <p class="exp-section-desc reveal-left reveal-2" data-i18n="proy.timeline.desc">
+          Mis proyectos ordenados en el tiempo. Usa el buscador para filtrar por
+          nombre o tecnología, y el desplegable para cambiar el orden.
+        </p>
+
+        <div class="exp-toolbar reveal-left reveal-2">
+          <div class="exp-field exp-field--search">
+            <label for="projSearch" data-i18n="proy.search.label">Buscar</label>
+            <input
+              type="search"
+              id="projSearch"
+              autocomplete="off"
+              placeholder="Proyecto o tecnología"
+              data-i18n-placeholder="proy.search.placeholder"
+            />
+          </div>
+          <div class="exp-field exp-field--sort">
+            <label for="projSort" data-i18n="proy.sort.label">Ordenar</label>
+            <select id="projSort">
+              <option value="newest" data-i18n="proy.sort.newest">Más recientes primero</option>
+              <option value="oldest" data-i18n="proy.sort.oldest">Más antiguos primero</option>
+            </select>
+          </div>
+        </div>
+
+        <ol class="exp-timeline" id="projTimeline">
+          <li
+            class="exp-entry reveal-left"
+            id="proyecto-1"
+            data-start="2026-08"
+            data-end=""
+            data-keywords="Portfolio web personal sitio estatico HTML CSS JavaScript i18n bilingue tema oscuro claro carrusel IntersectionObserver accesibilidad SEO Docker browser-sync GitHub Pages Git responsive"
+          >
+            <div class="exp-entry-marker" aria-hidden="true"></div>
+            <div class="exp-entry-card">
+              <a class="exp-entry-media" href="https://github.com/jrs407/web-personal" target="_blank" rel="noopener">
+                <img src="assets/img/Proyecto/portfolio.png" data-i18n-alt="projects.img1" alt="Imagen del proyecto Portfolio" draggable="false" />
+              </a>
+              <div class="exp-entry-body">
+                <p class="exp-period" data-i18n="proy.item1.period">Agosto 2026 – en curso</p>
+                <h3 data-i18n="proy.item1.h3">Portfolio</h3>
+                <p class="exp-place" data-i18n="proy.item1.place">Proyecto personal</p>
+                <p class="exp-summary" data-i18n="proy.item1.p">
+                  Este mismo sitio web: un portfolio personal multipágina (Sobre
+                  mí, Proyectos, Experiencia, Habilidades, Formación y Contacto)
+                  construido con HTML, CSS y JavaScript puro, sin frameworks ni
+                  paso de build, y desplegado en GitHub Pages. Nace para dar
+                  contexto al currículum y enseñar con más detalle lo que sé hacer.
+                </p>
+                <ul class="exp-points">
+                  <li data-i18n="proy.item1.b1">Sitio de siete páginas en HTML, CSS y JavaScript puro, sin frameworks ni bundler.</li>
+                  <li data-i18n="proy.item1.b2">Bilingüe español/inglés con un diccionario i18n propio en JavaScript; el idioma y el tema elegidos se recuerdan entre visitas con localStorage.</li>
+                  <li data-i18n="proy.item1.b3">Tema claro y oscuro que respeta la preferencia del sistema (prefers-color-scheme).</li>
+                  <li data-i18n="proy.item1.b4">Componentes interactivos hechos a mano: carruseles con arrastre táctil, cronologías con buscador y ordenación, y menú responsive.</li>
+                  <li data-i18n="proy.item1.b5">Animaciones de aparición al hacer scroll con IntersectionObserver.</li>
+                  <li data-i18n="proy.item1.b6">Atención a la accesibilidad (enlace para saltar al contenido, roles ARIA, aria-expanded) y al SEO (meta description, Open Graph, Twitter Card, canonical) en cada página.</li>
+                  <li data-i18n="proy.item1.b7">Entorno de desarrollo local con Docker y browser-sync con recarga automática.</li>
+                </ul>
+                <ul class="exp-tags">
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>JavaScript</li>
+                  <li>Docker</li>
+                  <li>GitHub Pages</li>
+                  <li>Git</li>
+                </ul>
+                <a class="btn btn-primary exp-item-cta" href="https://github.com/jrs407/web-personal" target="_blank" rel="noopener" data-i18n="proy.item1.cta">Ver repositorio en GitHub</a>
+              </div>
+            </div>
+          </li>
+          <li
+            class="exp-entry reveal-left"
+            id="proyecto-2"
+            data-start="2026-02"
+            data-end="2026-08"
+            data-keywords="Tokimori React 19 TypeScript Vite React Router 7 Node.js Express 5 MySQL 8 JWT Docker Docker Compose Nginx Microservicios API Gateway REST API CSS Modules HTML5 Canvas API Vitest Jest i18n Imgur API full-stack"
+          >
+            <div class="exp-entry-marker" aria-hidden="true"></div>
+            <div class="exp-entry-card">
+              <div class="exp-entry-media">
+                <img src="assets/img/Proyecto/tokimori.png" data-i18n-alt="projects.img2" alt="Imagen del proyecto Tokimori" draggable="false" />
+              </div>
+              <div class="exp-entry-body">
+                <p class="exp-period" data-i18n="proy.item2.period">Febrero 2026 – Agosto 2026</p>
+                <h3 data-i18n="proy.item2.h3">Tokimori</h3>
+                <p class="exp-place" data-i18n="proy.item2.place">Proyecto personal · Full-stack · Arquitectura de microservicios</p>
+                <p class="exp-summary" data-i18n="proy.item2.p">
+                  Aplicación web full-stack para gestionar una colección personal
+                  de elementos con seguimiento de tiempo, notas en Markdown,
+                  checklists y un lienzo visual por elemento. Construida sobre una
+                  arquitectura de 6 microservicios en Node.js/TypeScript tras un
+                  API Gateway (nginx), con frontend en React 19 y despliegue
+                  completo con Docker Compose.
+                </p>
+                <ul class="exp-points">
+                  <li data-i18n="proy.item2.b1">Diseñé una arquitectura de 6 microservicios (auth, items, colección, notas, objetivos/canvas, sesiones) en Node.js + Express 5 + TypeScript, cada uno con su responsabilidad y base de datos MySQL compartida (8 tablas).</li>
+                  <li data-i18n="proy.item2.b2">Implementé un API Gateway con nginx como único punto de entrada público; los servicios internos no son accesibles desde fuera de la red Docker, con enrutado por path al frontend y a cada servicio.</li>
+                  <li data-i18n="proy.item2.b3">Autenticación con JWT (tokens de 7 días) sobre cookies secure, hashing con bcrypt, y endurecimiento con helmet, rate limiting y CORS configurable.</li>
+                  <li data-i18n="proy.item2.b4">Desarrollé un canvas visual por elemento con la HTML5 Canvas API sin librerías: dibujo libre, formas, imágenes y texto, con arrastre, redimensionado y rotación, historial de deshacer/rehacer y control de capas (z-index).</li>
+                  <li data-i18n="proy.item2.b5">Frontend en React 19 + Vite 7 + React Router 7 + TypeScript, con React Compiler, CSS Modules, sistema de i18n propio (es/en) e interfaz con tema claro/oscuro/automático y color de acento configurable.</li>
+                  <li data-i18n="proy.item2.b6">Creé utilidades a medida: drag &amp; drop con animaciones FLIP (hook useFlipList), render de Markdown propio, temporizador flotante persistente entre páginas y notificaciones del navegador.</li>
+                  <li data-i18n="proy.item2.b7">Panel de estadísticas globales (horas totales, racha de días, gráfico de 7 días), sistema de logros desbloqueables, panel de administración y cuenta demo.</li>
+                  <li data-i18n="proy.item2.b8">Testing con Vitest + Testing Library (frontend) y Jest + Supertest (backend); contenerización completa con Docker Compose separando configuración de producción (frontend compilado servido por nginx) y override de desarrollo (Vite hot-reload).</li>
+                </ul>
+                <ul class="exp-tags">
+                  <li>React 19</li>
+                  <li>TypeScript</li>
+                  <li>Vite</li>
+                  <li>React Router</li>
+                  <li>Node.js</li>
+                  <li>Express</li>
+                  <li>MySQL</li>
+                  <li>JWT</li>
+                  <li>Microservicios</li>
+                  <li>API Gateway</li>
+                  <li>Docker</li>
+                  <li>Nginx</li>
+                  <li>REST</li>
+                  <li>CSS Modules</li>
+                  <li>HTML5 Canvas</li>
+                  <li>Vitest</li>
+                  <li>Jest</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ol>
+
+        <p class="exp-empty" id="projEmpty" hidden data-i18n="proy.empty">
+          No hay proyectos que coincidan con la búsqueda.
         </p>
       </div>
     </section>
@@ -72,8 +210,8 @@
   <footer class="site-footer">
     <div class="container">
       <ul class="footer-contact">
-        <li>Email: <a href="mailto:josecarlosruizsan@gmail.com">josecarlosruizsan@gmail.com</a></li>
-        <li>Teléfono: <a href="tel:+34608257574">+34 608257574</a></li>
+        <li data-i18n-html="footer.email">Email: <a href="mailto:josecarlosruizsan@gmail.com">josecarlosruizsan@gmail.com</a></li>
+        <li data-i18n-html="footer.phone">Teléfono: <a href="tel:+34608257574">+34 608257574</a></li>
         <li>GitHub: <a href="https://github.com/jrs407">github.com/jrs407</a></li>
         <li>LinkedIn: <a href="https://www.linkedin.com/in/jose-carlos-ruiz-sanchez/">linkedin.com/in/jose-carlos-ruiz-sanchez</a></li>
       </ul>
