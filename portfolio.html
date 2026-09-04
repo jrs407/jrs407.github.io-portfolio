@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es" data-i18n-title="pf.title">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio · José Carlos Ruiz Sánchez</title>
+  <meta name="description" content="Detalle del proyecto Portfolio de José Carlos Ruiz Sánchez: este mismo sitio web, un portfolio personal multipágina construido con HTML, CSS y JavaScript puro, sin frameworks ni paso de build, y desplegado en GitHub Pages." />
+  <meta name="author" content="José Carlos Ruiz Sánchez" />
+  <meta name="keywords" content="Portfolio, sitio estático, HTML, CSS, JavaScript, i18n, tema oscuro, IntersectionObserver, accesibilidad, SEO, Docker, GitHub Pages, José Carlos Ruiz Sánchez" />
+  <link rel="canonical" href="https://jrs407.github.io/web-personal/portfolio.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Portfolio · José Carlos Ruiz Sánchez" />
+  <meta property="og:description" content="Detalle del proyecto Portfolio: este mismo sitio web, un portfolio personal multipágina en HTML, CSS y JavaScript puro, sin frameworks ni paso de build, desplegado en GitHub Pages." />
+  <meta property="og:url" content="https://jrs407.github.io/web-personal/portfolio.html" />
+  <meta property="og:image" content="https://jrs407.github.io/web-personal/assets/img/Foto.jpg" />
+  <meta property="og:locale" content="es_ES" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Portfolio · José Carlos Ruiz Sánchez" />
+  <meta name="twitter:description" content="Detalle del proyecto Portfolio: este mismo sitio web, un portfolio personal multipágina en HTML, CSS y JavaScript puro, sin frameworks ni paso de build, desplegado en GitHub Pages." />
+  <meta name="twitter:image" content="https://jrs407.github.io/web-personal/assets/img/Foto.jpg" />
+
+  <link rel="icon" href="data:," />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/experiencia.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="logo">JC</a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" data-i18n="nav.about">Sobre mí</a></li>
+        <li><a href="proyectos.html" data-i18n="nav.projects">Proyectos</a></li>
+        <li><a href="experiencia.html" data-i18n="nav.experience">Experiencia laboral</a></li>
+        <li><a href="habilidades.html" data-i18n="nav.skills">Habilidades</a></li>
+        <li><a href="formacion.html" data-i18n="nav.education">Formación Académica</a></li>
+        <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" data-i18n-label="themeToggle" aria-label="Cambiar tema">🌙</button>
+        <button class="language-toggle" id="languageToggle" aria-label="Cambiar idioma">🇬🇧</button>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" data-i18n-label="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="exp-hero">
+      <div class="container">
+        <p class="exp-eyebrow" data-i18n="pf.eyebrow">Proyectos · Detalle del proyecto</p>
+        <h1 data-i18n="pf.h1">Portfolio</h1>
+        <p class="exp-lead" data-i18n="pf.lead">
+          Este mismo sitio web: mi portfolio personal multipágina, construido
+          con HTML, CSS y JavaScript puro, sin frameworks ni paso de build, y
+          desplegado en GitHub Pages.
+        </p>
+        <ul class="exp-tags exp-hero-tags">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Docker</li>
+          <li>GitHub Pages</li>
+          <li>Git</li>
+        </ul>
+        <ul class="exp-detail-toc">
+          <li><a href="#contexto" data-i18n="pf.toc.context">Contexto</a></li>
+          <li><a href="#descripcion" data-i18n="pf.toc.description">Descripción</a></li>
+          <li><a href="#decisiones" data-i18n="pf.toc.decisions">Decisiones técnicas</a></li>
+          <li><a href="#arquitectura" data-i18n="pf.toc.architecture">Arquitectura y stack</a></li>
+          <li><a href="#balance" data-i18n="pf.toc.balance">Balance</a></li>
+        </ul>
+
+        <figure class="exp-hero-media">
+          <img src="assets/img/Proyecto/portfolio.png" data-i18n-alt="pf.hero.imgAlt" alt="Imagen del proyecto Portfolio" draggable="false" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contexto">
+      <div class="container">
+        <h2 class="section-title reveal-left" data-i18n="pf.context.title">Contexto del proyecto</h2>
+
+        <dl class="exp-detail-meta reveal-left">
+          <dt data-i18n="pf.context.type.dt">Tipo</dt>
+          <dd data-i18n="pf.context.type.dd">Proyecto personal</dd>
+
+          <dt data-i18n="pf.context.period.dt">Periodo</dt>
+          <dd data-i18n="pf.context.period.dd">Septiembre 2026 – en curso</dd>
+
+          <dt data-i18n="pf.context.status.dt">Estado</dt>
+          <dd data-i18n="pf.context.status.dd">En desarrollo activo</dd>
+
+          <dt data-i18n="pf.context.stack.dt">Stack principal</dt>
+          <dd data-i18n="pf.context.stack.dd">HTML, CSS y JavaScript, sin frameworks ni paso de build</dd>
+
+          <dt data-i18n="pf.context.code.dt">Código</dt>
+          <dd><a href="https://github.com/jrs407/web-personal" target="_blank" rel="noopener" data-i18n="pf.context.code.dd">Repositorio público en GitHub</a></dd>
+
+          <dt data-i18n="pf.context.web.dt">Web</dt>
+          <dd><a href="https://jrs407.github.io/web-personal/" target="_blank" rel="noopener" data-i18n="pf.context.web.dd">jrs407.github.io/web-personal</a></dd>
+        </dl>
+
+        <div class="exp-detail-card reveal-left reveal-2">
+          <h3 data-i18n="pf.context.origin.h3">Cómo surgió</h3>
+          <p><em data-i18n="pf.context.origin.p">Por rellenar</em></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="descripcion">
+      <div class="container">
+        <h2 class="section-title reveal-left" data-i18n="pf.desc.title">Descripción del proyecto</h2>
+
+        <div class="exp-detail-card reveal-left">
+          <h3 data-i18n="pf.desc.what.h3">Qué es</h3>
+          <p data-i18n="pf.desc.what.p">
+            Este mismo sitio web: un portfolio personal multipágina (Sobre mí,
+            Proyectos, Experiencia, Habilidades, Formación y Contacto) construido
+            con HTML, CSS y JavaScript puro, sin frameworks ni paso de build, y
+            desplegado en GitHub Pages. Nace para dar contexto al currículum y
+            enseñar con más detalle lo que sé hacer.
+          </p>
+        </div>
+
+        <div class="exp-detail-card reveal-left reveal-2">
+          <h3 data-i18n="pf.desc.includes.h3">Qué incluye</h3>
+          <ul>
+            <li data-i18n="pf.desc.includes.li1">Sitio de siete páginas en HTML, CSS y JavaScript puro, sin frameworks ni bundler.</li>
+            <li data-i18n="pf.desc.includes.li2">Bilingüe español/inglés con un diccionario i18n propio en JavaScript; el idioma y el tema elegidos se recuerdan entre visitas con localStorage.</li>
+            <li data-i18n="pf.desc.includes.li3">Tema claro y oscuro que respeta la preferencia del sistema (prefers-color-scheme).</li>
+            <li data-i18n="pf.desc.includes.li4">Componentes interactivos hechos a mano: carruseles con arrastre táctil, cronologías con buscador y ordenación, y menú responsive.</li>
+            <li data-i18n="pf.desc.includes.li5">Animaciones de aparición al hacer scroll con IntersectionObserver.</li>
+            <li data-i18n="pf.desc.includes.li6">Atención a la accesibilidad (enlace para saltar al contenido, roles ARIA, aria-expanded) y al SEO (meta description, Open Graph, Twitter Card, canonical) en cada página.</li>
+            <li data-i18n="pf.desc.includes.li7">Entorno de desarrollo local con Docker y browser-sync con recarga automática.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="decisiones">
+      <div class="container">
+        <h2 class="section-title reveal-left" data-i18n="pf.decisions.title">Decisiones técnicas</h2>
+
+        <div class="exp-detail-card reveal-left">
+          <p data-i18n="pf.decisions.p">
+            El punto de partida fue el destino: quería desplegar en GitHub Pages,
+            que sirve solo ficheros estáticos. El despliegue es un simple push a
+            main, sin acción de CI ni compilación. Esa restricción marcó el resto
+            de decisiones, y en todas prioricé mantener el sitio ligero y sin
+            dependencias.
+          </p>
+          <ul>
+            <li data-i18n="pf.decisions.li1">HTML, CSS y JavaScript puro, sin framework ni empaquetador. Pages no ejecuta un paso de build, y un sitio estático consume menos memoria y recursos, así que es más difícil topar con los límites del servicio a medida que el sitio crece. A cambio, asumo que no hay componentes reutilizables y que el head, la cabecera y el pie se repiten en cada página.</li>
+            <li data-i18n="pf.decisions.li2">Ocho páginas independientes en lugar de una SPA. Cada URL entrega HTML real en la primera petición, sin router ni renderizado en cliente, lo que favorece el SEO y el rastreo y hace que el contenido no dependa de JavaScript.</li>
+            <li data-i18n="pf.decisions.li3">Sistema de traducción propio: un único objeto con los diccionarios español e inglés en script.js, claves declaradas en el marcado con data-i18n y una función que recorre los nodos y sustituye el texto. El idioma se guarda en localStorage y se aplica al cargar, antes de pintar. Así evito una librería, una petición de red por idioma y un paso de extracción de cadenas; el coste es mantener las traducciones a mano. La cabecera daba problemas al cambiar de idioma al principio; ya está resuelto.</li>
+            <li data-i18n="pf.decisions.li4">Tema claro y oscuro mediante un atributo data-theme en la raíz y variables CSS. En la primera visita se respeta prefers-color-scheme y después manda la elección guardada en localStorage; se aplica antes de pintar para no provocar un parpadeo.</li>
+            <li data-i18n="pf.decisions.li5">Carruseles, cronologías con buscador y menú responsive escritos a mano, sin dependencias: el carrusel usa transform sobre una pista con arrastre táctil y desactiva la transición mientras se arrastra; las cronologías ordenan por fecha y filtran sobre el texto y unas palabras clave; las apariciones al hacer scroll usan un único IntersectionObserver.</li>
+            <li data-i18n="pf.decisions.li6">Para desarrollar en local, un contenedor con browser-sync que sirve la carpeta y recarga el navegador al guardar. Frente a una extensión del editor, cualquiera con Docker levanta el mismo servidor sin configurar nada, y es el mismo flujo con contenedores que uso en proyectos mayores. En Windows el contenedor no recibe eventos de archivo, así que se fuerza el sondeo. Este entorno no se despliega: Pages sirve los ficheros tal cual.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="arquitectura">
+      <div class="container">
+        <h2 class="section-title reveal-left" data-i18n="pf.arch.title">Arquitectura y stack</h2>
+
+        <div class="exp-detail-tech reveal-left">
+          <div>
+            <h3 data-i18n="pf.arch.site.h3">Sitio</h3>
+            <ul class="exp-tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-i18n="pf.arch.tooling.h3">Tooling</h3>
+            <ul class="exp-tags">
+              <li>Docker</li>
+              <li>browser-sync</li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-i18n="pf.arch.deploy.h3">Despliegue</h3>
+            <ul class="exp-tags">
+              <li>GitHub Pages</li>
+              <li>Git</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-detail-card reveal-left">
+          <p data-i18n="pf.arch.detail.p">
+            No hay separación entre código fuente y compilado: la raíz del
+            repositorio es lo que GitHub Pages publica, con un fichero .nojekyll
+            para que sirva los archivos sin procesarlos. En la raíz están las ocho
+            páginas HTML y todo lo demás cuelga de assets/, con el CSS y el
+            JavaScript organizados en dos capas, una global y otra por página.
+          </p>
+          <ul>
+            <li data-i18n="pf.arch.detail.li1">CSS en capas. style.css (unas 850 líneas) es lo común: reset, los tokens de diseño como variables CSS (tema claro y su variante [data-theme="dark"]), el contenedor de layout, la cabecera y el pie, los botones, el carrusel y las animaciones de aparición. Cada página añade después una hoja propia solo con sus componentes; experiencia.css la comparten experiencia.html y las páginas de detalle (ual-trace.html y esta), y proyectos.css son cuatro líneas.</li>
+            <li data-i18n="pf.arch.detail.li2">JavaScript con la misma división. script.js (unas 1.000 líneas) lo carga cada página: comportamiento de la cabecera (menú responsive, cambio de tema y de idioma), el objeto TRANSLATIONS con los dos diccionarios, la función que traduce la página, el IntersectionObserver de las apariciones y el carrusel. Después cada página carga un script pequeño; experiencia.js y proyectos.js (unas 57 líneas cada uno) mueven la cronología con buscador y orden, y no hacen nada si su elemento no está en la página. Son scripts clásicos al final de &lt;body&gt;, sin módulos, en un ámbito global compartido.</li>
+            <li data-i18n="pf.arch.detail.li3">El español es el texto de origen en el marcado y los atributos data-i18n (y sus variantes para title, alt, aria-label y placeholder) nombran la clave. Al cargar, script.js lee el idioma de localStorage, por defecto español, y sustituye el contenido de cada nodo marcado.</li>
+            <li data-i18n="pf.arch.detail.li4">En assets/ están las imágenes en subcarpetas por página, con los iconos en su formato original (png, webp o svg) y un placeholder.svg compartido; las tipografías (Space Grotesk e Inter) vienen de Google Fonts con preconnect, y el PDF del currículum en assets/cv/ se enlaza desde la portada.</li>
+            <li data-i18n="pf.arch.detail.li5">No hay package.json, dependencias ni compilación: los ficheros se escriben y se sirven tal cual. La única imagen Docker que existe es la del entorno de desarrollo local.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="balance">
+      <div class="container">
+        <h2 class="section-title reveal-left" data-i18n="pf.balance.title">Balance</h2>
+        <p class="reveal-left" data-i18n="pf.balance.lead">
+          Como proyecto personal construido de cero y sin plantillas, cumple el
+          objetivo con el que empecé: sirve de escaparate técnico para las cosas
+          que el currículum no muestra, y demuestra que puedo sacar adelante un
+          proyecto completo sin depender de un framework. No es un proyecto
+          grande ni complejo, pero está terminado, publicado y en mantenimiento.
+        </p>
+
+        <div class="exp-detail-card reveal-left">
+          <h3 data-i18n="pf.balance.gains.h3">Qué me llevo</h3>
+          <ul>
+            <li data-i18n="pf.balance.gains.li1">Al no usar ningún framework, cada pieza (el carrusel, las cronologías, el cambio de tema, la traducción) la he tenido que entender y escribir yo, sin que una librería la resuelva por debajo. Eso me ha obligado a manejar el DOM, los eventos y las variables CSS directamente.</li>
+            <li data-i18n="pf.balance.gains.li2">Montar el sistema de traducción a mano me ha enseñado los compromisos que normalmente esconde una librería de i18n: mantener dos diccionarios sincronizados, decidir cuándo se aplica la traducción para que no haya parpadeo de contenido sin traducir, y nombrar las claves de forma consistente entre páginas.</li>
+            <li data-i18n="pf.balance.gains.li3">Usar Docker para el entorno de desarrollo local, aunque el sitio final no se despliega en contenedores, me ha servido para practicar el mismo flujo que uso en proyectos con más piezas.</li>
+          </ul>
+        </div>
+
+        <div class="exp-detail-card reveal-left reveal-2">
+          <h3 data-i18n="pf.balance.different.h3">Qué haría distinto</h3>
+          <ul>
+            <li data-i18n="pf.balance.different.li1">Al no tener paso de build, la cabecera, el pie y el &lt;head&gt; se repiten literalmente en las ocho páginas; cambiar algo en todas implica ir página por página. Si empezara de nuevo, valoraría un pequeño paso de compilación (o un script propio) solo para ensamblar esas partes comunes sin perder el despliegue estático.</li>
+            <li data-i18n="pf.balance.different.li2">Las claves de traducción y los nombres de clases CSS por página han ido saliendo sobre la marcha, según construía cada página; con el sitio ya grande, se nota que no partían de una convención pensada desde el principio. La definiría antes de escribir la primera página.</li>
+            <li data-i18n="pf.balance.different.li3">Todo lo he probado a mano, cambiando el idioma, el tema y el tamaño de ventana en el navegador. Con más páginas y componentes compartidos, un par de comprobaciones automáticas, aunque fueran simples, darían más confianza al tocar código común como script.js.</li>
+          </ul>
+        </div>
+
+        <a class="exp-back-link reveal-left" href="proyectos.html" data-i18n="pf.balance.back">&#8249; Volver a Proyectos</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <ul class="footer-contact">
+        <li data-i18n-html="footer.email">Email: <a href="mailto:josecarlosruizsan@gmail.com">josecarlosruizsan@gmail.com</a></li>
+        <li data-i18n-html="footer.phone">Teléfono: <a href="tel:+34608257574">+34 608257574</a></li>
+        <li>GitHub: <a href="https://github.com/jrs407">github.com/jrs407</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/jose-carlos-ruiz-sanchez/">linkedin.com/in/jose-carlos-ruiz-sanchez</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/experiencia.js"></script>
+</body>
+</html>
