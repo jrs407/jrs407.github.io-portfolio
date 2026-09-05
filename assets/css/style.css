@@ -838,6 +838,10 @@ img {
     width: 100%;
   }
 
+  .hero-copy {
+    transform: none;
+  }
+
   .hero-actions {
     flex-wrap: wrap;
     justify-content: center;
